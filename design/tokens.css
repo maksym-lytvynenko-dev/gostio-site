@@ -1,0 +1,115 @@
+/* Gostio — design tokens
+   Единственный источник правды по цвету, типографике и размерам.
+   Палитра: тёплый графит + медь (brand-src/brand-visual.md).
+   Подключается первым, до остальных стилей сайта. */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* --- Фон: «ресторанный вечер» --- */
+  --c-bg:            #141110;  /* базовый фон страницы */
+  --c-bg-deep:       #0C0A09;  /* подвал, затемнённые секции */
+  --c-surface:       #1C1817;  /* карточки, панели */
+  --c-surface-2:     #211C1A;  /* вложенные элементы, инпуты */
+  --c-line:          #332A25;  /* границы 1px */
+  --c-line-soft:     #262020;  /* разделители внутри карточек */
+
+  /* --- Текст --- */
+  --c-text:          #F4ECE3;
+  --c-text-muted:    #B6A79B;  /* подписи, сноски; на --c-bg контраст 7.1:1 */
+  --c-text-dim:      #8A7A6E;  /* только для декоративных подписей 12px+ */
+
+  /* --- Тёплый акцент (один на весь сайт) --- */
+  --c-accent:        #E08A5C;
+  --c-accent-hi:     #EFAA85;  /* верх градиента, hover */
+  --c-accent-lo:     #C2643C;  /* низ градиента, active */
+  --c-accent-soft:   rgba(224, 138, 92, 0.12); /* подложка плашек */
+  --g-accent: linear-gradient(135deg, var(--c-accent-hi) 0%, var(--c-accent) 55%, var(--c-accent-lo) 100%);
+
+  /* --- Служебные цвета (только в интерфейсных мокапах и статусах) --- */
+  --c-live:          #7FB68F;  /* «в эфире», подтверждено, свободный стол */
+  --c-live-soft:     rgba(127, 182, 143, 0.14);
+  --c-warn:          #E8B15C;  /* лист ожидания, опаздывает */
+  --c-danger:        #D96A5A;  /* no-show, отмена */
+  --c-info:          #93A9B6;  /* каналы, нейтральная подсветка на схемах */
+
+  /* --- Светлая инверсия (мокапы панели ресторана) --- */
+  --c-ui-bg:         #FAF6F0;
+  --c-ui-surface:    #FFFFFF;
+  --c-ui-line:       #E6DACA;
+  --c-ui-text:       #1A1715;
+  --c-ui-muted:      #5F544E;
+
+  /* --- Типографика --- */
+  --f-display: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-text:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Шкала: clamp(min, fluid, max) — десктоп в max, мобильный в min */
+  --t-h1:  clamp(34px, 5.0vw, 60px);
+  --t-h2:  clamp(26px, 3.4vw, 40px);
+  --t-h3:  clamp(20px, 2.2vw, 26px);
+  --t-lead: clamp(17px, 1.6vw, 21px);
+  --t-body: 17px;
+  --t-small: 15px;
+  --t-caption: 13px;
+  --t-stat: clamp(44px, 6vw, 76px);   /* «~40%» в блоке трёх цифр */
+
+  --lh-tight: 1.08;   /* H1, крупные цифры */
+  --lh-head:  1.18;   /* H2—H3 */
+  --lh-body:  1.62;   /* абзацы */
+  --ls-head:  -0.02em;
+  --ls-over:  0.14em; /* надзаголовки капсом */
+
+  /* --- Сетка и ритм --- */
+  --container: 1200px;
+  --container-narrow: 760px;  /* текстовые блоки: /security, /faq */
+  --gutter: 24px;
+  --pad-x: clamp(20px, 5vw, 48px);
+  --section-y: clamp(64px, 9vw, 128px);
+
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px;
+
+  /* --- Радиусы --- */
+  --r-sm: 8px;    /* теги, бейджи */
+  --r-md: 14px;   /* кнопки, инпуты */
+  --r-lg: 20px;   /* карточки */
+  --r-xl: 28px;   /* крупные блоки, мокапы */
+  --r-pill: 999px;
+
+  /* --- Тени и свечение --- */
+  --sh-card:  0 1px 2px rgba(0,0,0,.4), 0 12px 32px rgba(0,0,0,.28);
+  --sh-lift:  0 2px 4px rgba(0,0,0,.4), 0 24px 56px rgba(0,0,0,.42);
+  --sh-accent: 0 8px 28px rgba(224,138,92,.28);
+  --glow-accent: radial-gradient(60% 60% at 50% 0%, rgba(224,138,92,.20) 0%, rgba(224,138,92,0) 70%);
+
+  /* --- Движение --- */
+  --e-out: cubic-bezier(.22,.68,.32,1);
+  --d-fast: 140ms;
+  --d-base: 240ms;
+  --d-slow: 520ms;   /* появление секций при скролле */
+  --d-draw: 900ms;   /* отрисовка линий на схемах */
+
+  --z-header: 100;
+  --z-sticky-cta: 90;
+  --z-modal: 200;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --d-fast: 0ms; --d-base: 0ms; --d-slow: 0ms; --d-draw: 0ms; }
+}
+
+/* --- Фирменный лок-ап Gostio ---------------------------------------------
+   Знак — <img>, слово — живой <span>, иначе шрифт не подхватится внутри SVG.
+   Размер задаётся ОДНИМ font-size на .g-logo. */
+.g-logo {
+  display: inline-flex; align-items: center; gap: .30em;
+  line-height: 1; white-space: nowrap; font-size: 22px;
+  text-decoration: none; color: var(--c-text);
+}
+.g-logo img { display: block; height: .95em; width: .95em; }
+.g-logo span {
+  font-family: var(--f-display); font-weight: 800; font-size: 1em;
+  letter-spacing: -0.025em; transform: translateY(.012em);
+}
+.g-logo:hover span { color: var(--c-accent-hi); }

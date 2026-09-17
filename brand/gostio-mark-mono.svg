@@ -1,0 +1,9 @@
+<!-- One-colour mark: inherits the text colour of its container (currentColor).
+     Use for stamps, single-colour print, embroidery, small UI icons. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Gostio">
+  <title>Gostio</title>
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="9">
+    <path d="M47.56 16.44A22 22 0 1 0 54 32"/>
+    <path d="M54 32H41.5"/>
+  </g>
+</svg>

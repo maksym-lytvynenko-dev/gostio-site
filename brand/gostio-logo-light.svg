@@ -1,0 +1,18 @@
+<!--
+  Gostio — полный логотип (знак + начертание), светлый фон.
+  ВАЖНО: текст здесь — живой <text> в Manrope 800. Он отрисуется правильно,
+  только если шрифт Manrope доступен странице (подключён через Google Fonts)
+  И этот SVG вставлен инлайном в HTML. В <img src="...svg"> внешние шрифты
+  не грузятся — там используйте PNG (gostio-logo-light.png) или HTML-локап
+  из brand-visual.md.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 128" width="536" height="128" role="img" aria-label="Gostio">
+  <title>Gostio</title>
+  <g fill="none" stroke-linecap="round" transform="translate(0 7) scale(1.78125)">
+    <path d="M47.56 16.44A22 22 0 1 0 54 32" stroke="#1A1715" stroke-width="9"/>
+    <path d="M54 32H41.5" stroke="#C2643C" stroke-width="9"/>
+  </g>
+  <text x="150" y="106"
+        font-family="Manrope, 'Manrope Fallback', 'Segoe UI', system-ui, sans-serif"
+        font-size="120" font-weight="800" letter-spacing="-3" fill="#1A1715">Gostio</text>
+</svg>

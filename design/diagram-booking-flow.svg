@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 620" width="1240" height="620"
+     font-family="Manrope, Inter, system-ui, sans-serif" role="img"
+     aria-label="Путь брони: от обращения гостя в любом канале до визита в ресторан">
+  <defs>
+    <linearGradient id="acc2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EFAA85"/><stop offset="1" stop-color="#C2643C"/>
+    </linearGradient>
+    <marker id="fwd" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M2 1 L6 4 L2 7" fill="none" stroke="#8A7A6E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .card{fill:#1C1817;stroke:#332A25;rx:18}
+      .st{fill:#F4ECE3;font-size:13.5px;font-weight:800;text-anchor:middle}
+      .sd{fill:#B6A79B;font-size:10.5px;font-weight:500;text-anchor:middle}
+      .num{fill:#141110;font-size:12px;font-weight:800;text-anchor:middle}
+      .h1{fill:#F4ECE3;font-size:22px;font-weight:800}
+      .cap{fill:#8A7A6E;font-size:11px}
+      .chip{fill:#211C1A;stroke:#332A25;rx:10}
+      .cht{fill:#EFE4D6;font-size:11px;text-anchor:middle}
+      .bt{fill:#F4ECE3;font-size:12.5px;font-weight:800}
+      .bd{fill:#B6A79B;font-size:11px}
+    </style>
+  </defs>
+
+  <rect width="1240" height="620" rx="24" fill="#141110"/>
+  <text x="40" y="50" class="h1">Путь брони</text>
+  <text x="40" y="72" class="cap">Один и тот же сценарий в любом канале — гость не замечает, что говорит с системой</text>
+
+  <!-- каналы -->
+  <g>
+    <rect x="40" y="92" width="120" height="30" class="chip"/><text x="100" y="112" class="cht">Звонок</text>
+    <rect x="170" y="92" width="120" height="30" class="chip"/><text x="230" y="112" class="cht">Instagram</text>
+    <rect x="300" y="92" width="120" height="30" class="chip"/><text x="360" y="112" class="cht">WhatsApp</text>
+    <rect x="430" y="92" width="120" height="30" class="chip"/><text x="490" y="112" class="cht">Google</text>
+    <rect x="560" y="92" width="120" height="30" class="chip"/><text x="620" y="112" class="cht">Сайт</text>
+    <rect x="690" y="92" width="120" height="30" class="chip"/><text x="750" y="112" class="cht">Панель хостес</text>
+    <text x="830" y="112" class="cap">— любой канал ведёт в один и тот же сценарий</text>
+  </g>
+  <line x1="110" y1="126" x2="110" y2="164" stroke="#8A7A6E" stroke-width="1.4" marker-end="url(#fwd)" transform="rotate(90 110 145)" opacity="0"/>
+  <path d="M110 126 L110 158" stroke="#8A7A6E" stroke-width="1.4" fill="none"/>
+  <path d="M106 154 L110 160 L114 154" stroke="#8A7A6E" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 7 шагов -->
+  <g>
+    <rect x="40"   y="170" width="140" height="130" class="card"/>
+    <circle cx="64" cy="196" r="13" fill="url(#acc2)"/><text x="64" y="200" class="num">1</text>
+    <text x="110" y="238" class="st">Обращение</text>
+    <text x="110" y="262" class="sd">Звонок, сообщение</text><text x="110" y="276" class="sd">или форма на сайте</text>
+
+    <rect x="210"  y="170" width="140" height="130" class="card"/>
+    <circle cx="234" cy="196" r="13" fill="url(#acc2)"/><text x="234" y="200" class="num">2</text>
+    <text x="280" y="238" class="st">Сбор запроса</text>
+    <text x="280" y="262" class="sd">Дата, время, гости,</text><text x="280" y="276" class="sd">повод, аллергии</text>
+
+    <rect x="380"  y="170" width="140" height="130" class="card"/>
+    <circle cx="404" cy="196" r="13" fill="url(#acc2)"/><text x="404" y="200" class="num">3</text>
+    <text x="450" y="232" class="st">Проверка</text><text x="450" y="248" class="st">доступности</text>
+    <text x="450" y="270" class="sd">Свободные столы</text><text x="450" y="284" class="sd">в реальном времени</text>
+
+    <rect x="550"  y="170" width="140" height="130" class="card"/>
+    <circle cx="574" cy="196" r="13" fill="url(#acc2)"/><text x="574" y="200" class="num">4</text>
+    <text x="620" y="238" class="st">Предложение</text>
+    <text x="620" y="262" class="sd">Время и стол,</text><text x="620" y="276" class="sd">рядом — альтернативы</text>
+
+    <rect x="720"  y="170" width="140" height="130" class="card"/>
+    <circle cx="744" cy="196" r="13" fill="url(#acc2)"/><text x="744" y="200" class="num">5</text>
+    <text x="790" y="238" class="st">Подтверждение</text>
+    <text x="790" y="262" class="sd">Бронь уходит в POS,</text><text x="790" y="276" class="sd">гостю — сообщение</text>
+
+    <rect x="890"  y="170" width="140" height="130" class="card"/>
+    <circle cx="914" cy="196" r="13" fill="url(#acc2)"/><text x="914" y="200" class="num">6</text>
+    <text x="960" y="238" class="st">Напоминание</text>
+    <text x="960" y="262" class="sd">За день и за 2 часа,</text><text x="960" y="276" class="sd">отмена в один клик</text>
+
+    <rect x="1060" y="170" width="140" height="130" rx="18" fill="#1C1817" stroke="#7FB68F" stroke-opacity=".45"/>
+    <circle cx="1084" cy="196" r="13" fill="#7FB68F"/><text x="1084" y="200" class="num">7</text>
+    <text x="1130" y="238" class="st">Визит</text>
+    <text x="1130" y="262" class="sd">Хостес видит гостя</text><text x="1130" y="276" class="sd">и его предпочтения</text>
+  </g>
+  <g stroke="#8A7A6E" stroke-width="1.4" fill="none" marker-end="url(#fwd)">
+    <line x1="182" y1="235" x2="206" y2="235"/><line x1="352" y1="235" x2="376" y2="235"/>
+    <line x1="522" y1="235" x2="546" y2="235"/><line x1="692" y1="235" x2="716" y2="235"/>
+    <line x1="862" y1="235" x2="886" y2="235"/><line x1="1032" y1="235" x2="1056" y2="235"/>
+  </g>
+
+  <!-- ветки -->
+  <text x="40" y="380" class="h1" font-size="16">Что если…</text>
+  <g stroke="#4A3F38" stroke-width="1.3" stroke-dasharray="5 6" fill="none">
+    <path d="M450 302 L450 340 L220 340 L220 408"/>
+    <path d="M280 302 L280 326 L620 326 L620 408"/>
+    <path d="M960 302 L960 340 L1020 340 L1020 408"/>
+  </g>
+  <g>
+    <rect x="40" y="408" width="360" height="120" rx="18" fill="#1C1817" stroke="#E8B15C" stroke-opacity=".35"/>
+    <text x="64" y="440" class="bt">…свободных столов нет</text>
+    <text x="64" y="464" class="bd">Система предлагает ближайшее время, соседний зал</text>
+    <text x="64" y="482" class="bd">или лист ожидания — и пишет, когда место освободилось.</text>
+    <text x="64" y="506" class="cap">Шаг 3 · check_availability</text>
+
+    <rect x="440" y="408" width="360" height="120" rx="18" fill="#1C1817" stroke="#93A9B6" stroke-opacity=".35"/>
+    <text x="464" y="440" class="bt">…вопрос выходит за сценарий</text>
+    <text x="464" y="464" class="bd">Передача хостес в один шаг: человек получает весь</text>
+    <text x="464" y="482" class="bd">контекст диалога и продолжает с той же точки.</text>
+    <text x="464" y="506" class="cap">Шаг 2 · handoff_to_human</text>
+
+    <rect x="840" y="408" width="360" height="120" rx="18" fill="#1C1817" stroke="#D96A5A" stroke-opacity=".35"/>
+    <text x="864" y="440" class="bt">…гость опаздывает или отменяет</text>
+    <text x="864" y="464" class="bd">Перенос или отмена в ответном сообщении, стол сразу</text>
+    <text x="864" y="482" class="bd">возвращается в продажу — меньше пустых посадок.</text>
+    <text x="864" y="506" class="cap">Шаг 6 · move_booking</text>
+  </g>
+
+  <text x="40" y="574" class="cap">Среднее время ответа — меньше 800 мс в голосе; в мессенджерах ответ приходит мгновенно, круглосуточно.</text>
+</svg>

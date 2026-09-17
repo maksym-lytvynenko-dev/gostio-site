@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 812" width="1240" height="812"
+     font-family="Manrope, Inter, system-ui, sans-serif" role="img"
+     aria-label="Архитектура Tavolo AI: каналы, речь, AI-ядро, доменные сервисы, интеграции">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFAA85"/><stop offset=".55" stop-color="#E08A5C"/><stop offset="1" stop-color="#C2643C"/>
+    </linearGradient>
+    <marker id="aEnd" viewBox="0 0 8 8" refX="4" refY="6" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1 L4 6 L7 1" fill="none" stroke="#8A7A6E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="aStart" viewBox="0 0 8 8" refX="4" refY="2" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 7 L4 2 L7 7" fill="none" stroke="#8A7A6E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .layer{fill:#1C1817;stroke:#332A25}
+      .lt{fill:#F4ECE3;font-size:15px;font-weight:800}
+      .ln{fill:#E08A5C;font-size:15px;font-weight:800}
+      .chip{fill:#211C1A;stroke:#332A25;rx:12}
+      .ct{fill:#EFE4D6;font-size:11.5px;font-weight:500;text-anchor:middle}
+      .cm{fill:#B6A79B;font-size:11px;font-weight:500;text-anchor:middle}
+      .mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:11px;fill:#EFAA85;text-anchor:middle}
+      .flow{stroke:#8A7A6E;stroke-width:1.4}
+      .cap{fill:#8A7A6E;font-size:11px}
+    </style>
+  </defs>
+
+  <rect width="1240" height="812" rx="24" fill="#141110"/>
+  <text x="40" y="58" class="lt" font-size="22">Архитектура Tavolo AI</text>
+  <text x="40" y="80" class="cap">От канала обращения до подтверждённой брони в POS — пять слоёв и сквозной контур безопасности</text>
+
+  <!-- 1 · Каналы -->
+  <rect x="40" y="100" width="900" height="104" rx="20" class="layer"/>
+  <text x="64" y="128"><tspan class="ln">1</tspan><tspan class="lt" dx="8">Каналы</tspan></text>
+  <g>
+    <rect x="64"  y="144" width="130" height="44" class="chip"/><text x="129" y="171" class="ct">SIP / Twilio</text>
+    <rect x="204" y="144" width="130" height="44" class="chip"/><text x="269" y="164" class="ct">WhatsApp</text><text x="269" y="178" class="cm">Business API</text>
+    <rect x="344" y="144" width="130" height="44" class="chip"/><text x="409" y="164" class="ct">Instagram</text><text x="409" y="178" class="cm">Messaging API</text>
+    <rect x="484" y="144" width="130" height="44" class="chip"/><text x="549" y="171" class="ct">Google Reserve</text>
+    <rect x="624" y="144" width="130" height="44" class="chip"/><text x="689" y="171" class="ct">Виджет на сайте</text>
+    <rect x="764" y="144" width="130" height="44" class="chip"/><text x="829" y="171" class="ct">Панель хостес</text>
+  </g>
+  <line x1="490" y1="208" x2="490" y2="224" class="flow" marker-start="url(#aStart)" marker-end="url(#aEnd)"/>
+
+  <!-- 2 · Речь -->
+  <rect x="40" y="228" width="900" height="104" rx="20" class="layer"/>
+  <text x="64" y="256"><tspan class="ln">2</tspan><tspan class="lt" dx="8">Речевой слой</tspan></text>
+  <g>
+    <rect x="64"  y="272" width="130" height="44" class="chip"/><text x="129" y="292" class="ct">ASR</text><text x="129" y="306" class="cm">распознавание</text>
+    <rect x="204" y="272" width="130" height="44" class="chip"/><text x="269" y="292" class="ct">Endpointing</text><text x="269" y="306" class="cm">barge-in</text>
+    <rect x="344" y="272" width="130" height="44" class="chip"/><text x="409" y="292" class="ct">TTS</text><text x="409" y="306" class="cm">синтез речи</text>
+    <rect x="484" y="272" width="130" height="44" class="chip"/><text x="549" y="292" class="ct">Задержка ответа</text><text x="549" y="306" class="cm">меньше 800 мс</text>
+  </g>
+  <line x1="490" y1="336" x2="490" y2="352" class="flow" marker-start="url(#aStart)" marker-end="url(#aEnd)"/>
+
+  <!-- 3 · AI-ядро -->
+  <rect x="40" y="356" width="900" height="140" rx="20" fill="#1C1817" stroke="#E08A5C" stroke-opacity=".35"/>
+  <text x="64" y="384"><tspan class="ln">3</tspan><tspan class="lt" dx="8">AI-ядро</tspan><tspan class="cap" dx="10">оркестратор диалога и вызовы инструментов</tspan></text>
+  <g>
+    <rect x="64"  y="400" width="130" height="44" rx="12" fill="#2A1F18" stroke="#E08A5C" stroke-opacity=".4"/><text x="129" y="420" class="ct">Оркестратор</text><text x="129" y="434" class="cm">диалога</text>
+    <rect x="204" y="400" width="130" height="44" class="chip"/><text x="269" y="427" class="mono">check_availability</text>
+    <rect x="344" y="400" width="130" height="44" class="chip"/><text x="409" y="427" class="mono">create_booking</text>
+    <rect x="484" y="400" width="130" height="44" class="chip"/><text x="549" y="427" class="mono">move_booking</text>
+    <rect x="624" y="400" width="130" height="44" class="chip"/><text x="689" y="427" class="mono">get_menu_item</text>
+    <rect x="764" y="400" width="130" height="44" class="chip"/><text x="829" y="427" class="mono">create_order</text>
+    <rect x="204" y="452" width="130" height="44" class="chip"/><text x="269" y="479" class="mono">handoff_to_human</text>
+    <rect x="344" y="452" width="270" height="44" class="chip"/><text x="479" y="472" class="ct">RAG по меню, правилам зала и FAQ</text><text x="479" y="486" class="cm">ответы только из данных ресторана</text>
+    <rect x="624" y="452" width="270" height="44" class="chip"/><text x="759" y="472" class="ct">Профиль гостя и история визитов</text><text x="759" y="486" class="cm">язык, предпочтения, аллергии</text>
+  </g>
+  <line x1="490" y1="500" x2="490" y2="516" class="flow" marker-start="url(#aStart)" marker-end="url(#aEnd)"/>
+
+  <!-- 4 · Доменные сервисы -->
+  <rect x="40" y="520" width="900" height="104" rx="20" class="layer"/>
+  <text x="64" y="548"><tspan class="ln">4</tspan><tspan class="lt" dx="8">Доменные сервисы</tspan></text>
+  <g>
+    <rect x="64"  y="564" width="130" height="44" class="chip"/><text x="129" y="584" class="ct">Доступность</text><text x="129" y="598" class="cm">столы и время</text>
+    <rect x="204" y="564" width="130" height="44" class="chip"/><text x="269" y="591" class="ct">Брони</text>
+    <rect x="344" y="564" width="130" height="44" class="chip"/><text x="409" y="584" class="ct">Меню</text><text x="409" y="598" class="cm">14 групп аллергенов</text>
+    <rect x="484" y="564" width="130" height="44" class="chip"/><text x="549" y="591" class="ct">Гости</text>
+    <rect x="624" y="564" width="130" height="44" class="chip"/><text x="689" y="591" class="ct">Заказы</text>
+    <rect x="764" y="564" width="130" height="44" class="chip"/><text x="829" y="591" class="ct">Уведомления</text>
+  </g>
+  <line x1="490" y1="628" x2="490" y2="644" class="flow" marker-start="url(#aStart)" marker-end="url(#aEnd)"/>
+
+  <!-- 5 · Интеграции -->
+  <rect x="40" y="648" width="900" height="104" rx="20" class="layer"/>
+  <text x="64" y="676"><tspan class="ln">5</tspan><tspan class="lt" dx="8">Интеграции</tspan></text>
+  <g>
+    <rect x="64"  y="692" width="270" height="44" class="chip"/><text x="199" y="712" class="ct">POS-системы</text><text x="199" y="726" class="cm">iiko · r_keeper · Poster · Lightspeed · Square</text>
+    <rect x="344" y="692" width="130" height="44" class="chip"/><text x="409" y="712" class="ct">Stripe</text><text x="409" y="726" class="cm">депозиты</text>
+    <rect x="484" y="692" width="130" height="44" class="chip"/><text x="549" y="719" class="ct">Календари</text>
+    <rect x="624" y="692" width="130" height="44" class="chip"/><text x="689" y="719" class="ct">Вебхуки</text>
+    <rect x="764" y="692" width="130" height="44" class="chip"/><text x="829" y="719" class="ct">Открытый REST API</text>
+  </g>
+
+  <!-- Сквозной контур -->
+  <rect x="964" y="100" width="236" height="652" rx="20" fill="#1C1817" stroke="#332A25"/>
+  <rect x="964" y="100" width="6" height="652" rx="3" fill="url(#acc)"/>
+  <text x="990" y="134" class="lt" font-size="14">Наблюдаемость</text>
+  <text x="990" y="154" class="lt" font-size="14">и безопасность</text>
+  <text x="990" y="176" class="cap">сквозной слой для всех уровней</text>
+  <g class="ct" text-anchor="start" font-size="12">
+    <text x="990" y="216">Логи и трассировка диалогов</text>
+    <text x="990" y="252">Метрики: доля решённых</text><text x="990" y="268" class="cm" text-anchor="start">обращений, задержка, отказы</text>
+    <text x="990" y="304">Записи звонков и стенограммы</text>
+    <text x="990" y="340">Хранение в ЕС, GDPR</text><text x="990" y="356" class="cm" text-anchor="start">удаление по запросу гостя</text>
+    <text x="990" y="392">Ролевой доступ персонала</text>
+    <text x="990" y="428">Шифрование при передаче</text><text x="990" y="444" class="cm" text-anchor="start">и хранении</text>
+    <text x="990" y="480">Аудит действий и изменений</text>
+    <text x="990" y="516">Передача человеку в один шаг</text>
+    <text x="990" y="552">Резервные каналы при сбое</text>
+    <text x="990" y="588" class="cm" text-anchor="start">PCI DSS — на стороне Stripe,</text>
+    <text x="990" y="604" class="cm" text-anchor="start">карты не хранятся у нас</text>
+  </g>
+  <g stroke="#332A25" stroke-width="1" stroke-dasharray="4 5">
+    <line x1="940" y1="152" x2="964" y2="152"/><line x1="940" y1="280" x2="964" y2="280"/>
+    <line x1="940" y1="426" x2="964" y2="426"/><line x1="940" y1="572" x2="964" y2="572"/>
+    <line x1="940" y1="700" x2="964" y2="700"/>
+  </g>
+</svg>

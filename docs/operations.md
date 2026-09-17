@@ -28,9 +28,24 @@ sections reveal while scrolling, the `#demo` form button (it must answer with th
 
 ## Publishing (GitHub Pages)
 
-The site is published from the `main` branch. Settings → Pages → *Deploy from a
-branch* → `main` / `/dist`, or copy `dist/` to a `gh-pages` branch. `dist/` is
-committed on purpose so no CI is needed.
+Live: <https://maksym-lytvynenko-dev.github.io/gostio-site/>
+Repo: <https://github.com/maksym-lytvynenko-dev/gostio-site>
+
+Pages serves the **`gh-pages`** branch from its root. GitHub only offers `/` and
+`/docs` as source folders, never `/dist`, so `dist/` is pushed to `gh-pages` as a
+subtree:
+
+```
+python3 build.py
+git add -A && git commit -m "..."
+git push origin main
+git subtree push --prefix dist origin gh-pages
+```
+
+`main` keeps the sources (including a committed `dist/`, so the published state
+is always visible in the default branch too); `gh-pages` holds only the built
+site. The Pages source is set once in Settings → Pages → *Deploy from a branch*
+→ `gh-pages` / `/ (root)`; a deploy takes about a minute.
 
 If the repository name or owner changes, update **both** keys in
 `site.config.json` and rebuild:
@@ -39,8 +54,8 @@ If the repository name or owner changes, update **both** keys in
   or a custom domain),
 - `site_url` — the absolute origin + base, used for `canonical` and `og:image`.
 
-A custom domain (e.g. `gostio.ai`) means `base: ""` and
-`site_url: "https://gostio.ai"`, plus a `CNAME` file in `dist/`.
+A custom domain (e.g. `gostio.ai`) means `base: ""`,
+`site_url: "https://gostio.ai"` and a `CNAME` file in `static/`.
 
 ## Before any public use
 

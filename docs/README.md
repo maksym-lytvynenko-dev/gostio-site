@@ -21,6 +21,12 @@ python3 build.py        # writes dist/ (static/ is copied in first)
 There is no backend, no build tooling and no dependencies beyond Python 3.
 `dist/` is what gets published.
 
+## Where it lives
+
+- site: <https://maksym-lytvynenko-dev.github.io/gostio-site/>
+- repo: <https://github.com/maksym-lytvynenko-dev/gostio-site> (`main` = sources,
+  `gh-pages` = the published `dist/`)
+
 ## Current state
 
 - One page (`index.html`) with anchor sections: `#problem #channels #features

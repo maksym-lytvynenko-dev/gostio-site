@@ -1,0 +1,67 @@
+<!doctype html>
+<!--
+  Исходник OG-картинки 1200×630. Снимать целиком, viewport 1200×630.
+  Фон — боке из CSS-градиентов, внешних изображений нет, файл самодостаточный.
+  SVG знака берётся на уровень выше (папка brand/).
+-->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Gostio — OG image 1200×630</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{width:1200px;height:630px;overflow:hidden;background:#141110;font-family:Manrope,sans-serif}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden;background:#141110}
+  /* тёплый боке-фон «вечернего зала», собран градиентами — без внешних картинок */
+  .bg{position:absolute;inset:0;
+      background:
+        radial-gradient(circle at 88% 22%, rgba(255,186,120,.75) 0 38px, rgba(255,186,120,0) 72px),
+        radial-gradient(circle at 74% 62%, rgba(232,146,104,.55) 0 30px, rgba(232,146,104,0) 62px),
+        radial-gradient(circle at 96% 74%, rgba(255,205,150,.50) 0 26px, rgba(255,205,150,0) 56px),
+        radial-gradient(circle at 63% 18%, rgba(194,100,60,.45) 0 22px, rgba(194,100,60,0) 48px),
+        radial-gradient(circle at 81% 92%, rgba(255,176,110,.38) 0 20px, rgba(255,176,110,0) 46px),
+        radial-gradient(circle at 99% 44%, rgba(168,79,42,.55) 0 34px, rgba(168,79,42,0) 70px),
+        radial-gradient(circle at 69% 88%, rgba(255,214,164,.30) 0 14px, rgba(255,214,164,0) 34px),
+        radial-gradient(ellipse 620px 560px at 100% 50%, rgba(174,86,44,.55), rgba(20,17,16,0) 70%);
+      filter:blur(1.5px)}
+  .veil{position:absolute;inset:0;
+        background:linear-gradient(100deg,
+          rgba(20,17,16,.98) 0%, rgba(20,17,16,.94) 34%,
+          rgba(20,17,16,.66) 58%, rgba(20,17,16,.10) 100%);}
+  .content{position:absolute;inset:0;padding:60px 72px 64px;display:flex;flex-direction:column}
+  .lock{display:inline-flex;align-items:center;gap:.30em;line-height:1;font-size:46px}
+  .lock img{display:block;height:.95em;width:.95em}
+  .lock span{font-weight:800;letter-spacing:-.025em;color:#F4ECE3;transform:translateY(.012em)}
+  .spacer{flex:1}
+  h1{font-weight:800;font-size:66px;line-height:1.06;letter-spacing:-.028em;color:#F7F0E8}
+  h1 .acc{color:#E89268}
+  .sub{margin-top:20px;font-family:Inter,sans-serif;font-weight:400;font-size:25px;line-height:1.45;color:#CBBCB0;max-width:33ch}
+  .foot{display:flex;align-items:center;gap:12px;margin-top:38px}
+  .chip{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border:1px solid rgba(244,236,227,.24);
+        border-radius:999px;color:#DCCDC1;font-family:Inter,sans-serif;font-size:19px;background:rgba(20,17,16,.45)}
+  .chip b{font-weight:500;color:#F4ECE3}
+  .dot{width:9px;height:9px;border-radius:50%;background:#E08A5C;box-shadow:0 0 0 5px rgba(224,138,92,.18)}
+  .rule{position:absolute;left:0;right:0;bottom:0;height:8px;background:linear-gradient(90deg,#A84F2A 0%,#C2643C 45%,#E08A5C 100%)}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg"></div>
+  <div class="veil"></div>
+  <div class="content">
+    <span class="lock"><img src="../gostio-mark-dark.svg" alt=""><span>Gostio</span></span>
+    <div class="spacer"></div>
+    <h1>Ни одного<br>пропущенного <span class="acc">гостя</span>.</h1>
+    <p class="sub">AI-администратор для ресторанов: отвечает на звонки и WhatsApp 24/7 и бронирует столы.</p>
+    <div class="foot">
+      <span class="chip"><span class="dot"></span><b>Звонки · WhatsApp · Брони</b></span>
+      <span class="chip">RU · BG · EN</span>
+      <span class="chip">gostio.ai</span>
+    </div>
+  </div>
+  <div class="rule"></div>
+</div>
+</body>
+</html>

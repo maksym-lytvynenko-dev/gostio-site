@@ -1,0 +1,151 @@
+/* Tavolo AI — базовые компоненты.
+   Подключается после tokens.css. Это рабочий CSS, а не картинка:
+   вёрстка сайта может брать эти классы как есть. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--f-text);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--f-display);
+  letter-spacing: var(--ls-head);
+  line-height: var(--lh-head);
+  margin: 0 0 var(--s-4);
+  font-weight: 800;
+}
+h1 { font-size: var(--t-h1); line-height: var(--lh-tight); }
+h2 { font-size: var(--t-h2); }
+h3 { font-size: var(--t-h3); font-weight: 700; }
+
+p { margin: 0 0 var(--s-4); }
+a { color: var(--c-accent-hi); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.lead { font-size: var(--t-lead); color: var(--c-text-muted); line-height: 1.5; }
+.muted { color: var(--c-text-muted); }
+.caption { font-size: var(--t-caption); color: var(--c-text-dim); line-height: 1.45; }
+
+/* Надзаголовок секции */
+.overline {
+  font-family: var(--f-display);
+  font-size: var(--t-caption);
+  font-weight: 700;
+  letter-spacing: var(--ls-over);
+  text-transform: uppercase;
+  color: var(--c-accent);
+  margin: 0 0 var(--s-3);
+}
+
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--pad-x); }
+.section { padding-block: var(--section-y); }
+
+/* --- Кнопки --- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
+  font-family: var(--f-display); font-weight: 700; font-size: var(--t-small);
+  line-height: 1; letter-spacing: 0;
+  padding: 16px 26px; border-radius: var(--r-md);
+  border: 1px solid transparent; cursor: pointer; white-space: nowrap;
+  transition: transform var(--d-fast) var(--e-out),
+              box-shadow var(--d-base) var(--e-out),
+              background-color var(--d-base) var(--e-out),
+              border-color var(--d-base) var(--e-out);
+}
+.btn:hover { transform: translateY(-1px); text-decoration: none; }
+.btn:active { transform: translateY(0); }
+.btn:focus-visible { outline: 2px solid var(--c-accent-hi); outline-offset: 3px; }
+
+.btn-primary { background: var(--g-accent); color: #23140A; box-shadow: var(--sh-accent); }
+.btn-primary:hover { box-shadow: 0 12px 36px rgba(224,138,92,.38); }
+
+.btn-secondary { background: var(--c-surface-2); color: var(--c-text); border-color: var(--c-line); }
+.btn-secondary:hover { border-color: #3A302A; background: #2A231F; }
+
+.btn-ghost { background: transparent; color: var(--c-text); border-color: var(--c-line); }
+.btn-ghost:hover { border-color: var(--c-accent); color: var(--c-accent-hi); }
+
+.btn-link { background: none; border: none; padding: 0; color: var(--c-accent-hi); }
+.btn-sm { padding: 11px 18px; font-size: var(--t-caption); border-radius: var(--r-sm); }
+.btn-lg { padding: 19px 34px; font-size: var(--t-body); }
+.btn-block { display: flex; width: 100%; }
+
+/* --- Карточки --- */
+.card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  padding: var(--s-6);
+  box-shadow: var(--sh-card);
+  transition: transform var(--d-base) var(--e-out), border-color var(--d-base) var(--e-out);
+}
+.card-hover:hover { transform: translateY(-3px); border-color: #3A302A; }
+.card-accent { border-color: rgba(224,138,92,.35); background:
+  linear-gradient(180deg, rgba(224,138,92,.07) 0%, rgba(224,138,92,0) 46%), var(--c-surface); }
+
+.card-icon {
+  width: 48px; height: 48px; border-radius: var(--r-md);
+  display: grid; place-items: center; margin-bottom: var(--s-4);
+  background: var(--c-accent-soft); color: var(--c-accent-hi);
+}
+.card-icon svg { width: 24px; height: 24px; }
+
+/* --- Мелкие элементы --- */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: var(--t-caption); font-weight: 600;
+  padding: 6px 12px; border-radius: var(--r-pill);
+  background: var(--c-accent-soft); color: var(--c-accent-hi);
+}
+.badge-live { background: var(--c-live-soft); color: var(--c-live); }
+.badge-warn { background: rgba(255,201,96,.14); color: var(--c-warn); }
+.badge-danger { background: rgba(255,107,107,.14); color: var(--c-danger); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+.tag {
+  display: inline-block; font-size: var(--t-caption); color: var(--c-text-muted);
+  border: 1px solid var(--c-line); border-radius: var(--r-sm); padding: 5px 10px;
+}
+
+/* Сноска с источником: <sup class="fn">1</sup> */
+.fn { font-size: 11px; color: var(--c-accent); vertical-align: super; margin-left: 2px; }
+
+/* --- Поля формы (демо-заявка) --- */
+.field { display: block; margin-bottom: var(--s-4); }
+.field > span { display: block; font-size: var(--t-caption); color: var(--c-text-muted); margin-bottom: 6px; }
+.input, .select, .textarea {
+  width: 100%; font-family: var(--f-text); font-size: var(--t-small); color: var(--c-text);
+  background: var(--c-surface-2); border: 1px solid var(--c-line);
+  border-radius: var(--r-md); padding: 14px 16px;
+  transition: border-color var(--d-base) var(--e-out), box-shadow var(--d-base) var(--e-out);
+}
+.input::placeholder { color: var(--c-text-dim); }
+.input:focus, .select:focus, .textarea:focus {
+  outline: none; border-color: var(--c-accent);
+  box-shadow: 0 0 0 3px rgba(224,138,92,.16);
+}
+.input-error { border-color: var(--c-danger); }
+.error-text { font-size: var(--t-caption); color: var(--c-danger); margin-top: 6px; }
+
+/* --- Блок с цифрой --- */
+.stat { font-family: var(--f-display); font-weight: 800; font-size: var(--t-stat);
+        line-height: var(--lh-tight); letter-spacing: -0.03em;
+        background: var(--g-accent); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* --- Сетки --- */
+.grid { display: grid; gap: var(--gutter); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+/* --- Появление секции при скролле (секции 3,4,5 главной) --- */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity var(--d-slow) var(--e-out), transform var(--d-slow) var(--e-out); }
+.reveal.is-visible { opacity: 1; transform: none; }

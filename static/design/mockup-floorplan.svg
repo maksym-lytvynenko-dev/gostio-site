@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760"
+     font-family="Manrope, Inter, system-ui, sans-serif" role="img"
+     aria-label="Карта зала: столы, зоны, объединение столов, лист ожидания и карточка брони">
+  <defs>
+    <linearGradient id="fAcc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFAA85"/><stop offset=".55" stop-color="#E08A5C"/><stop offset="1" stop-color="#C2643C"/>
+    </linearGradient>
+    <style>
+      .ui{fill:#FFFFFF;stroke:#E6DACA}
+      .h{fill:#1A1715;font-weight:800}
+      .mu{fill:#5F544E;font-size:11.5px}
+      .lb{fill:#5F544E;font-size:10.5px;letter-spacing:.08em}
+      .v{fill:#1A1715;font-size:12.5px;font-weight:600}
+      .free{fill:#FFFFFF;stroke:#D9C9B6}
+      .busy{fill:#F1E8DC;stroke:#D9C9B6}
+      .tn{fill:#1A1715;font-size:12px;font-weight:700;text-anchor:middle}
+      .tm{fill:#5F544E;font-size:9.5px;text-anchor:middle}
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="20" fill="#FAF6F0"/>
+
+  <!-- шапка -->
+  <text x="40" y="52" class="h" font-size="22">Карта зала</text>
+  <text x="40" y="76" class="mu">Пятница, 19:42 · посадка 20:00–20:30</text>
+  <g>
+    <rect x="360" y="32" width="112" height="36" rx="12" fill="#1A1715"/><text x="416" y="55" class="h" fill="#FFFFFF" font-size="12" text-anchor="middle">Сейчас</text>
+    <rect x="480" y="32" width="112" height="36" rx="12" class="ui"/><text x="536" y="55" class="v" text-anchor="middle">20:00</text>
+    <rect x="600" y="32" width="112" height="36" rx="12" class="ui"/><text x="656" y="55" class="v" text-anchor="middle">21:00</text>
+    <rect x="720" y="32" width="112" height="36" rx="12" class="ui"/><text x="776" y="55" class="v" text-anchor="middle">22:00</text>
+  </g>
+  <g>
+    <circle cx="884" cy="50" r="5" fill="#FFFFFF" stroke="#D9C9B6"/><text x="898" y="54" class="mu">свободен</text>
+    <circle cx="976" cy="50" r="5" fill="#F1E8DC" stroke="#D9C9B6"/><text x="990" y="54" class="mu">занят</text>
+    <circle cx="1048" cy="50" r="5" fill="#E08A5C"/><text x="1062" y="54" class="mu">новая бронь</text>
+  </g>
+
+  <!-- план -->
+  <rect x="40" y="96" width="784" height="628" rx="18" class="ui"/>
+  <g>
+    <!-- зона: окна -->
+    <rect x="64" y="120" width="360" height="270" rx="14" fill="#FAF6F0" stroke="#E6DACA" stroke-dasharray="6 6"/>
+    <text x="84" y="146" class="lb">ЗОНА У ОКОН · тише, обзор на улицу</text>
+    <g>
+      <rect x="88" y="162" width="70" height="70" rx="16" class="free"/><text x="123" y="196" class="tn">2</text><text x="123" y="212" class="tm">2 места</text>
+      <rect x="182" y="162" width="70" height="70" rx="16" class="busy"/><text x="217" y="196" class="tn">4</text><text x="217" y="212" class="tm">до 21:15</text>
+      <rect x="276" y="162" width="70" height="70" rx="16" class="free"/><text x="311" y="196" class="tn">6</text><text x="311" y="212" class="tm">4 места</text>
+
+      <!-- выбранный стол 12 -->
+      <rect x="88" y="262" width="70" height="70" rx="16" class="busy"/><text x="123" y="296" class="tn">9</text><text x="123" y="312" class="tm">до 20:40</text>
+      <circle cx="217" cy="297" r="35" class="free"/><text x="217" y="296" class="tn">10</text><text x="217" y="312" class="tm">6 мест</text>
+      <circle cx="330" cy="297" r="40" fill="#F8E7DA" stroke="#E08A5C" stroke-width="2.5"/>
+      <circle cx="330" cy="297" r="52" fill="none" stroke="#E08A5C" stroke-opacity=".35" stroke-dasharray="4 6"/>
+      <text x="330" y="294" class="tn" fill="#A84F2A" font-size="14">12</text><text x="330" y="312" class="tm" fill="#A84F2A">20:15 · 4</text>
+      <circle cx="302" cy="262" r="5" fill="#E08A5C"/><circle cx="358" cy="262" r="5" fill="#E08A5C"/>
+      <circle cx="302" cy="332" r="5" fill="#E08A5C"/><circle cx="358" cy="332" r="5" fill="#E08A5C"/>
+    </g>
+
+    <!-- зона: основной зал -->
+    <rect x="448" y="120" width="352" height="270" rx="14" fill="#FAF6F0" stroke="#E6DACA" stroke-dasharray="6 6"/>
+    <text x="468" y="146" class="lb">ОСНОВНОЙ ЗАЛ</text>
+    <g>
+      <rect x="472" y="162" width="70" height="70" rx="16" class="busy"/><text x="507" y="196" class="tn">16</text><text x="507" y="212" class="tm">до 20:20</text>
+      <rect x="566" y="162" width="70" height="70" rx="16" class="free"/><text x="601" y="196" class="tn">17</text><text x="601" y="212" class="tm">2 места</text>
+      <rect x="660" y="162" width="70" height="70" rx="16" class="free"/><text x="695" y="196" class="tn">18</text><text x="695" y="212" class="tm">2 места</text>
+
+      <!-- объединение столов -->
+      <rect x="466" y="256" width="270" height="82" rx="16" fill="#FFFFFF" stroke="#93A9B6" stroke-width="2" stroke-dasharray="7 5"/>
+      <rect x="480" y="268" width="70" height="58" rx="12" class="free"/><text x="515" y="302" class="tn">19</text>
+      <rect x="558" y="268" width="70" height="58" rx="12" class="free"/><text x="593" y="302" class="tn">20</text>
+      <rect x="636" y="268" width="70" height="58" rx="12" class="free"/><text x="671" y="302" class="tn">21</text>
+      <rect x="576" y="342" width="150" height="22" rx="11" fill="#E9F0E9"/>
+      <text x="651" y="357" class="tm" fill="#4E7A5E">объединены → 10 гостей</text>
+    </g>
+
+    <!-- терраса -->
+    <rect x="64" y="414" width="736" height="182" rx="14" fill="#FAF6F0" stroke="#E6DACA" stroke-dasharray="6 6"/>
+    <text x="84" y="440" class="lb">ТЕРРАСА · открыта до 23:00, зависит от погоды</text>
+    <g>
+      <circle cx="122" cy="500" r="30" class="free"/><text x="122" y="504" class="tn">31</text>
+      <circle cx="206" cy="500" r="30" class="busy"/><text x="206" y="500" class="tn">32</text><text x="206" y="516" class="tm">до 21:00</text>
+      <circle cx="290" cy="500" r="30" class="free"/><text x="290" y="504" class="tn">33</text>
+      <circle cx="374" cy="500" r="30" class="free"/><text x="374" y="504" class="tn">34</text>
+      <rect x="428" y="470" width="80" height="60" rx="14" fill="#F3EADF" stroke="#D9C9B6" stroke-dasharray="5 5"/>
+      <text x="468" y="496" class="tm">стол 35</text><text x="468" y="512" class="tm" fill="#B23B3B">заблокирован</text>
+      <text x="540" y="496" class="mu">Блок держится до конца смены:</text>
+      <text x="540" y="514" class="mu">ремонт навеса — бронь сюда не попадёт.</text>
+    </g>
+
+    <!-- подсказка-легенда -->
+    <text x="64" y="640" class="lb">ВРЕМЯ ПОСАДКИ</text>
+    <text x="64" y="666" class="mu">2 гостя — 1 ч 15 мин · 4 гостя — 1 ч 45 мин · 6+ — 2 ч 15 мин.</text>
+    <text x="64" y="690" class="mu">Система сама держит зазор 15 минут между посадками и не ставит две брони на один стол.</text>
+  </g>
+
+  <!-- правая панель -->
+  <rect x="848" y="96" width="312" height="300" rx="18" fill="#FFFFFF" stroke="#E08A5C" stroke-opacity=".5"/>
+  <text x="872" y="128" class="lb" fill="#A84F2A">НОВАЯ БРОНЬ · СТОЛ 12</text>
+  <text x="872" y="162" class="h" font-size="20">20:15 · 4 гостя</text>
+  <text x="872" y="186" class="mu">Пятница, 17 сентября · 1 ч 45 мин</text>
+  <line x1="872" y1="202" x2="1136" y2="202" stroke="#F3EADF"/>
+  <text x="872" y="228" class="v">Мария Р.</text>
+  <text x="872" y="248" class="mu">+34 600 12 34 56 · звонок</text>
+  <text x="872" y="272" class="mu">Третий визит · любит стол у окна</text>
+  <g>
+    <rect x="872" y="286" width="108" height="24" rx="12" fill="#F8E7DA"/><text x="926" y="302" class="tm" fill="#A84F2A">без глютена</text>
+    <rect x="988" y="286" width="88" height="24" rx="12" fill="#F1E8DC"/><text x="1032" y="302" class="tm">у окна</text>
+  </g>
+  <rect x="872" y="324" width="126" height="40" rx="12" fill="url(#fAcc)"/><text x="935" y="349" class="h" font-size="12.5" fill="#1A1715" text-anchor="middle">Подтвердить</text>
+  <rect x="1010" y="324" width="126" height="40" rx="12" fill="#FFFFFF" stroke="#D9C9B6"/><text x="1073" y="349" class="v" text-anchor="middle">Перенести</text>
+
+  <!-- лист ожидания -->
+  <rect x="848" y="416" width="312" height="180" rx="18" class="ui"/>
+  <text x="872" y="448" class="h" font-size="15">Лист ожидания</text>
+  <g>
+    <rect x="872" y="464" width="264" height="48" rx="12" fill="#FAF6F0"/>
+    <text x="890" y="486" class="v">Антон · 2 гостя · 20:00</text>
+    <text x="890" y="503" class="mu">напишем, если стол освободится</text>
+    <rect x="872" y="522" width="264" height="48" rx="12" fill="#FAF6F0"/>
+    <text x="890" y="544" class="v">Лена · 5 гостей · 21:00</text>
+    <text x="890" y="561" class="mu">предложена терраса, ждём ответ</text>
+  </g>
+
+  <!-- статус смены -->
+  <rect x="848" y="616" width="312" height="108" rx="18" fill="#1A1715"/>
+  <text x="872" y="648" class="h" fill="#FFFFFF" font-size="14">Смена под контролем</text>
+  <text x="872" y="672" class="mu" fill="#B6A79B">Свободно сейчас: 7 столов · 24 места</text>
+  <text x="872" y="692" class="mu" fill="#B6A79B">Ближайшее окно для 4 гостей: 20:45</text>
+  <circle cx="1128" cy="644" r="5" fill="#7FB68F"/>
+</svg>

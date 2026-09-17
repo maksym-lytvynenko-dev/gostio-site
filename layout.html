@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#141110">
+
+<link rel="canonical" href="{{SITE_URL}}{{CANONICAL}}">
+<meta property="og:site_name" content="{{BRAND}}">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{SITE_URL}}{{CANONICAL}}">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{OG_DESCRIPTION}}">
+<meta property="og:image" content="{{SITE_URL}}/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{OG_IMAGE_ALT}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{OG_TITLE}}">
+<meta name="twitter:description" content="{{OG_DESCRIPTION}}">
+<meta name="twitter:image" content="{{SITE_URL}}/brand/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design/tokens.css">
+<link rel="stylesheet" href="/design/components.css">
+<link rel="stylesheet" href="/css/site.css">
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body data-page="{{SLUG}}">
+
+<p class="demo-ribbon">Демо-версия сайта: бренд и контакты — заглушки, заявки никуда не уходят.</p>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-row">
+    <a class="g-logo" href="/" aria-label="{{BRAND}}">
+      <img src="/brand/gostio-mark.svg" alt=""><span>{{BRAND}}</span>
+    </a>
+    <nav class="site-nav" id="siteNav" aria-label="Основная навигация">
+      {{NAV}}
+      <div class="nav-tail">
+        <div class="lang-switch" role="group" aria-label="Язык">
+          <a class="is-active" href="#" aria-current="true">RU</a><a href="#" data-soon="1">EN</a>
+        </div>
+        <a class="btn btn-primary btn-sm" href="#demo">Смотреть демо</a>
+      </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+{{BODY}}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="g-logo" href="/" aria-label="{{BRAND}}" style="font-size:20px">
+        <img src="/brand/gostio-mark.svg" alt=""><span>{{BRAND}}</span>
+      </a>
+      <p class="muted footer-note">{{TAGLINE_LONG}}</p>
+      <p class="caption">{{FOOTER_LEGAL}}</p>
+    </div>
+    <div>
+      <h4>Продукт</h4>
+      <a href="#how">Как это работает</a>
+      <a href="#channels">Каналы</a>
+      <a href="#tech">Интеграции</a>
+      <a href="#faq">Вопросы и ответы</a>
+    </div>
+    <div>
+      <h4>Компания</h4>
+      <a href="#problem">Проблема</a>
+      <a href="#audience">Кому подходит</a>
+      <a href="#security">Безопасность и GDPR</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+    <div>
+      <h4>Связаться</h4>
+      <a href="tel:{{PHONE_RAW}}">{{PHONE}}</a>
+      <a href="{{WHATSAPP}}">WhatsApp</a>
+      <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+      <a href="{{TELEGRAM}}">Telegram {{TELEGRAM_HANDLE}}</a>
+      <a class="btn btn-secondary btn-sm footer-cta" href="#demo">Запросить демо</a>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <span class="soon">Политика конфиденциальности — скоро</span><span class="soon">Условия использования — скоро</span>
+  </div>
+</footer>
+
+<a class="sticky-cta" href="#demo">Смотреть демо</a>
+<script src="/js/site.js" defer></script>
+</body>
+</html>

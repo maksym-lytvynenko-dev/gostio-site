@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="POS-система">
+  <rect x="4.2" y="7.8" width="15.6" height="12.4" rx="2.6"/>
+  <path d="M7.4 7.8V5.6a2 2 0 0 1 2-2h5.2a2 2 0 0 1 2 2v2.2"/>
+  <path d="M8.2 12.4h7.6M8.2 16h4.4"/>
+</svg>

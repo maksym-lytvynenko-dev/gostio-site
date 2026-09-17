@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780"
+     font-family="Manrope, Inter, system-ui, sans-serif" role="img"
+     aria-label="Панель ресторана: смена, брони, очередь обращений и метрики">
+  <defs>
+    <linearGradient id="dAcc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFAA85"/><stop offset=".55" stop-color="#E08A5C"/><stop offset="1" stop-color="#C2643C"/>
+    </linearGradient>
+    <style>
+      .ui{fill:#FFFFFF;stroke:#E6DACA}
+      .h{fill:#1A1715;font-weight:800}
+      .mu{fill:#5F544E;font-size:11.5px}
+      .lb{fill:#5F544E;font-size:10.5px;letter-spacing:.08em}
+      .v{fill:#1A1715;font-size:13px;font-weight:600}
+      .nav{fill:#5F544E;font-size:12.5px;font-weight:600}
+    </style>
+  </defs>
+
+  <rect width="1200" height="780" rx="20" fill="#FAF6F0"/>
+
+  <!-- сайдбар -->
+  <rect x="0" y="0" width="212" height="780" rx="20" fill="#141110"/>
+  <rect x="192" y="0" width="20" height="780" fill="#141110"/>
+  <g transform="translate(24 26)">
+    <rect width="30" height="30" rx="8" fill="url(#dAcc)"/>
+    <path d="M15 7.5a7 7 0 1 1-5.6 11.2l-1.4 4.1 4.3-1.3A7 7 0 0 1 15 7.5Z" fill="none" stroke="#141110" stroke-width="2" stroke-linejoin="round"/>
+    <text x="42" y="21" class="h" fill="#F4ECE3" font-size="15">tavolo<tspan fill="#E08A5C">.ai</tspan></text>
+  </g>
+  <g>
+    <rect x="16" y="86" width="180" height="38" rx="12" fill="#211C1A"/>
+    <text x="36" y="110" class="nav" fill="#F4ECE3">Смена</text>
+    <text x="36" y="152" class="nav">Брони</text>
+    <text x="36" y="192" class="nav">План зала</text>
+    <text x="36" y="232" class="nav">Диалоги</text>
+    <text x="36" y="272" class="nav">Гости</text>
+    <text x="36" y="312" class="nav">Меню и аллергены</text>
+    <text x="36" y="352" class="nav">Аналитика</text>
+    <text x="36" y="392" class="nav">Интеграции</text>
+    <text x="36" y="432" class="nav">Настройки</text>
+  </g>
+  <rect x="16" y="676" width="180" height="76" rx="14" fill="#1C1817"/>
+  <circle cx="44" cy="704" r="5" fill="#7FB68F"/>
+  <text x="58" y="708" class="mu" fill="#B6A79B">AI на линии</text>
+  <text x="32" y="732" class="mu" fill="#8A7A6E">Передать смену хостес</text>
+
+  <!-- шапка -->
+  <text x="248" y="52" class="h" font-size="22">Смена · пятница, 17 сентября</text>
+  <text x="248" y="76" class="mu">Обновлено 19:42 · La Terrazza, Барселона</text>
+  <rect x="884" y="34" width="132" height="38" rx="12" fill="#FFFFFF" stroke="#E6DACA"/>
+  <text x="904" y="58" class="v" font-size="12">Сегодня ▾</text>
+  <rect x="1028" y="34" width="144" height="38" rx="12" fill="url(#dAcc)"/>
+  <text x="1100" y="58" class="h" font-size="12.5" fill="#1A1715" text-anchor="middle">Добавить бронь</text>
+
+  <!-- метрики -->
+  <g>
+    <rect x="248" y="96" width="222" height="104" rx="16" class="ui"/>
+    <text x="272" y="124" class="lb">ПРИНЯТО ОБРАЩЕНИЙ</text>
+    <text x="272" y="162" class="h" font-size="30">128</text>
+    <text x="272" y="184" class="mu" fill="#4E7A5E">пропущено 0</text>
+
+    <rect x="486" y="96" width="222" height="104" rx="16" class="ui"/>
+    <text x="510" y="124" class="lb">БРОНЕЙ СОЗДАНО</text>
+    <text x="510" y="162" class="h" font-size="30">64</text>
+    <text x="510" y="184" class="mu">+18% к прошлой пятнице</text>
+
+    <rect x="724" y="96" width="222" height="104" rx="16" class="ui"/>
+    <text x="748" y="124" class="lb">РЕШЕНО БЕЗ ЧЕЛОВЕКА</text>
+    <text x="748" y="162" class="h" font-size="30">87%</text>
+    <text x="748" y="184" class="mu">13% — передано хостес</text>
+
+    <rect x="962" y="96" width="210" height="104" rx="16" class="ui"/>
+    <text x="986" y="124" class="lb">СРЕДНИЙ ОТВЕТ</text>
+    <text x="986" y="162" class="h" font-size="30">0,7 с</text>
+    <text x="986" y="184" class="mu">голос · 24/7</text>
+  </g>
+
+  <!-- таймлайн броней -->
+  <rect x="248" y="220" width="580" height="384" rx="16" class="ui"/>
+  <text x="272" y="252" class="h" font-size="15">Ближайшие посадки</text>
+  <text x="740" y="252" class="mu" text-anchor="end">все 64 брони →</text>
+  <g>
+    <line x1="272" y1="272" x2="804" y2="272" stroke="#F3EADF"/>
+    <g>
+      <text x="272" y="300" class="v">19:45</text><text x="344" y="300" class="v">Стол 6 · 2 гостя</text>
+      <text x="560" y="300" class="mu">Иван К. · WhatsApp</text>
+      <rect x="712" y="286" width="92" height="22" rx="11" fill="#E9F0E9"/><text x="758" y="301" class="mu" fill="#4E7A5E" text-anchor="middle">подтверждена</text>
+    </g>
+    <line x1="272" y1="320" x2="804" y2="320" stroke="#F3EADF"/>
+    <g>
+      <text x="272" y="348" class="v">20:00</text><text x="344" y="348" class="v">Стол 14 · 8 гостей</text>
+      <text x="560" y="348" class="mu">День рождения · звонок</text>
+      <rect x="712" y="334" width="92" height="22" rx="11" fill="#F7E9D6"/><text x="758" y="349" class="mu" fill="#9A6A0B" text-anchor="middle">депозит</text>
+    </g>
+    <line x1="272" y1="368" x2="804" y2="368" stroke="#F3EADF"/>
+    <g>
+      <rect x="260" y="376" width="556" height="48" rx="12" fill="#FDF6F0"/>
+      <text x="272" y="396" class="v">20:15</text><text x="344" y="396" class="v">Стол 12 · 4 гостя</text>
+      <text x="560" y="396" class="mu">Мария Р. · звонок</text>
+      <rect x="712" y="382" width="92" height="22" rx="11" fill="#F6DECD"/><text x="758" y="397" class="mu" fill="#A84F2A" text-anchor="middle">новая</text>
+      <text x="344" y="414" class="mu" fill="#A84F2A">пометка: без глютена · стол у окна</text>
+    </g>
+    <line x1="272" y1="440" x2="804" y2="440" stroke="#F3EADF"/>
+    <g>
+      <text x="272" y="468" class="v">20:30</text><text x="344" y="468" class="v">Стол 8 · 5 гостей</text>
+      <text x="560" y="468" class="mu">Google Reserve</text>
+      <rect x="712" y="454" width="92" height="22" rx="11" fill="#E9F0E9"/><text x="758" y="469" class="mu" fill="#4E7A5E" text-anchor="middle">подтверждена</text>
+    </g>
+    <line x1="272" y1="488" x2="804" y2="488" stroke="#F3EADF"/>
+    <g>
+      <text x="272" y="516" class="v">20:45</text><text x="344" y="516" class="v">Стол 2 · 2 гостя</text>
+      <text x="560" y="516" class="mu">Instagram</text>
+      <rect x="712" y="502" width="92" height="22" rx="11" fill="#FDECEC"/><text x="758" y="517" class="mu" fill="#B23B3B" text-anchor="middle">опаздывает</text>
+    </g>
+    <line x1="272" y1="536" x2="804" y2="536" stroke="#F3EADF"/>
+    <g>
+      <text x="272" y="564" class="v">21:00</text><text x="344" y="564" class="v">Стол 21 · 3 гостя</text>
+      <text x="560" y="564" class="mu">Сайт · виджет</text>
+      <rect x="712" y="550" width="92" height="22" rx="11" fill="#E9F0E9"/><text x="758" y="565" class="mu" fill="#4E7A5E" text-anchor="middle">подтверждена</text>
+    </g>
+  </g>
+
+  <!-- правая колонка: живые диалоги -->
+  <rect x="844" y="220" width="328" height="220" rx="16" class="ui"/>
+  <text x="868" y="252" class="h" font-size="15">Сейчас на линии</text>
+  <g>
+    <rect x="868" y="268" width="280" height="52" rx="12" fill="#FAF6F0"/>
+    <circle cx="892" cy="294" r="5" fill="#E08A5C"/>
+    <text x="910" y="290" class="v" font-size="12">Звонок · +34 600 ...</text>
+    <text x="910" y="308" class="mu">подбирает время на субботу · 00:18</text>
+
+    <rect x="868" y="330" width="280" height="52" rx="12" fill="#FAF6F0"/>
+    <circle cx="892" cy="356" r="5" fill="#7FB68F"/>
+    <text x="910" y="352" class="v" font-size="12">WhatsApp · Анна</text>
+    <text x="910" y="370" class="mu">переносит бронь с 20:00 на 21:00</text>
+
+    <rect x="868" y="392" width="280" height="30" rx="12" fill="#F7E9D6"/>
+    <text x="886" y="412" class="mu" fill="#9A6A0B">1 обращение ждёт хостес — вопрос о парковке</text>
+  </g>
+
+  <!-- каналы -->
+  <rect x="844" y="456" width="328" height="148" rx="16" class="ui"/>
+  <text x="868" y="488" class="h" font-size="15">Откуда приходят брони</text>
+  <g class="mu">
+    <text x="868" y="516">Звонки</text><rect x="962" y="506" width="120" height="8" rx="4" fill="#F3EADF"/><rect x="962" y="506" width="68" height="8" rx="4" fill="url(#dAcc)"/><text x="1100" y="516">41%</text>
+    <text x="868" y="542">WhatsApp</text><rect x="962" y="532" width="120" height="8" rx="4" fill="#F3EADF"/><rect x="962" y="532" width="34" height="8" rx="4" fill="url(#dAcc)"/><text x="1100" y="542">22%</text>
+    <text x="868" y="568">Instagram</text><rect x="962" y="558" width="120" height="8" rx="4" fill="#F3EADF"/><rect x="962" y="558" width="22" height="8" rx="4" fill="url(#dAcc)"/><text x="1100" y="568">14%</text>
+    <text x="868" y="594">Google и сайт</text><rect x="962" y="584" width="120" height="8" rx="4" fill="#F3EADF"/><rect x="962" y="584" width="28" height="8" rx="4" fill="url(#dAcc)"/><text x="1100" y="594">23%</text>
+  </g>
+
+  <!-- нижняя полоса: владельцу -->
+  <rect x="248" y="624" width="924" height="128" rx="16" class="ui"/>
+  <text x="272" y="656" class="h" font-size="15">Владельцу за неделю</text>
+  <g>
+    <text x="272" y="692" class="lb">ВЫРУЧКА ОТ БРОНЕЙ</text><text x="272" y="722" class="h" font-size="22">€ 38 400</text>
+    <text x="520" y="692" class="lb">НЕЯВКИ</text><text x="520" y="722" class="h" font-size="22">4,1%</text><text x="600" y="722" class="mu" fill="#4E7A5E">было 11%</text>
+    <text x="760" y="692" class="lb">ЗАПОЛНЯЕМОСТЬ</text><text x="760" y="722" class="h" font-size="22">78%</text>
+    <text x="960" y="692" class="lb">СЭКОНОМЛЕНО ЧАСОВ</text><text x="960" y="722" class="h" font-size="22">31 ч</text>
+  </g>
+</svg>

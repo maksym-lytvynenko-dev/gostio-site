@@ -1,0 +1,95 @@
+{
+  "_note": "Gostio brand strings for the demo site. ALL contact data is a PLACEHOLDER and must be replaced before any public announcement. Source: shared/brand-gostio.md",
+  "version": "1.0",
+  "updated": "2026-09-17",
+  "brand": {
+    "name": "Gostio",
+    "nameRu": "Гостио",
+    "wordmark": "Gostio",
+    "legalNamePlaceholder": "Gostio EOOD",
+    "fullRu": "Gostio — AI-администратор для ресторанов",
+    "fullEn": "Gostio — AI front-of-house for restaurants",
+    "domainPrimary": "gostio.ai",
+    "domainStatus": "not registered yet; gostio.ai / gostio.io / gostio.app were free on 2026-09-17",
+    "voicePersona": {
+      "name": "Мила",
+      "nameEn": "Mila",
+      "roleRu": "Мила — голос Gostio",
+      "roleEn": "Mila, the voice of Gostio"
+    }
+  },
+  "tagline": {
+    "ru": "Ни одного пропущенного гостя.",
+    "en": "Never miss a guest.",
+    "bg": "Нито един пропуснат гост.",
+    "heroLongRu": "Отвечает на каждый звонок. Бронирует каждый стол.",
+    "heroLongEn": "Every call answered. Every table booked.",
+    "subRu": "Работает 24/7 — даже когда зал забит",
+    "subEn": "Works 24/7 — even when the floor is full"
+  },
+  "description": {
+    "oneLineRu": "Gostio — AI-администратор, который принимает звонки и сообщения ресторана 24/7: отвечает гостям, бронирует столы и передаёт брони вашей команде.",
+    "oneLineEn": "Gostio is an AI front-of-house administrator that answers your restaurant's calls and messages 24/7 — replying to guests, booking tables and passing every reservation to your team.",
+    "oneLineBg": "Gostio е AI-администратор, който поема обажданията и съобщенията на ресторанта 24/7 — отговаря на гостите, запазва маси и подава резервациите на екипа."
+  },
+  "features": [
+    { "ru": "Принимает звонки 24/7, без гудков и ожидания", "en": "Answers every call 24/7, no hold music" },
+    { "ru": "Бронирует и переносит столы, помнит пожелания гостя", "en": "Books and moves tables, remembers guest preferences" },
+    { "ru": "Отвечает в WhatsApp текстом и голосом", "en": "Replies on WhatsApp by text and voice" },
+    { "ru": "Знает меню, часы, адрес, парковку, детский стул", "en": "Knows the menu, hours, address, parking, high chairs" },
+    { "ru": "Три языка в одном разговоре: RU, BG, EN", "en": "Three languages in one conversation: RU, BG, EN" },
+    { "ru": "Передаёт бронь в вашу таблицу, CRM или Telegram", "en": "Sends the booking to your sheet, CRM or Telegram" },
+    { "ru": "Запись разговора и расшифровка — в панели", "en": "Call recording and transcript in the dashboard" },
+    { "ru": "Подключение за один день, без нового железа", "en": "Live in one day, no new hardware" }
+  ],
+  "contacts": {
+    "_placeholder": true,
+    "_warning": "Fake data for layout only. Numbers end in zeros on purpose. Replace before any public use and keep a visible 'demo data' badge on the site.",
+    "phonePrimary": { "display": "+359 888 000 000", "href": "tel:+359888000000" },
+    "phoneSecondary": { "display": "+359 52 000 000", "href": "tel:+35952000000" },
+    "whatsapp": { "display": "+359 888 000 000", "href": "https://wa.me/359888000000" },
+    "telegram": { "display": "@gostio_demo", "href": "https://t.me/gostio_demo" },
+    "emailGeneral": { "display": "hello@gostio.ai", "href": "mailto:hello@gostio.ai" },
+    "emailSales": { "display": "sales@gostio.ai", "href": "mailto:sales@gostio.ai" },
+    "emailSupport": { "display": "support@gostio.ai", "href": "mailto:support@gostio.ai" },
+    "address": {
+      "ru": "9000 Варна, България, бул. «Княз Борис I» 000, офис 0",
+      "en": "000 Knyaz Boris I Blvd, office 0, 9000 Varna, Bulgaria",
+      "city": "Варна",
+      "country": "България"
+    },
+    "hours": { "ru": "Пн–Пт 10:00–19:00 (EET). Мила отвечает 24/7", "en": "Mon–Fri 10:00–19:00 EET. Mila answers 24/7" },
+    "social": {
+      "instagram": "https://instagram.com/gostio.ai",
+      "facebook": "https://facebook.com/gostio.ai",
+      "linkedin": "https://linkedin.com/company/gostio",
+      "youtube": "https://youtube.com/@gostio"
+    },
+    "cta": {
+      "demoCallRu": "Послушать, как отвечает Мила",
+      "demoCallEn": "Hear Mila answer a call",
+      "demoCallHref": "#demo",
+      "bookMeeting": "https://cal.com/gostio/demo",
+      "formNoteRu": "Оставьте телефон — перезвоним в рабочие часы. Это демо-форма, заявки пока никуда не уходят.",
+      "formNoteEn": "Leave your number and we'll call you back during office hours. This is a demo form — submissions are not delivered yet."
+    }
+  },
+  "meta": {
+    "lang": "ru",
+    "titleRu": "Gostio — AI-администратор для ресторанов | Ни одного пропущенного гостя",
+    "titleEn": "Gostio — AI front-of-house for restaurants | Never miss a guest",
+    "descriptionRu": "Gostio отвечает на звонки и сообщения ресторана 24/7: бронирует столы, знает меню и часы, передаёт брони вашей команде. Подключение за день.",
+    "descriptionEn": "Gostio answers your restaurant's calls and messages 24/7 — booking tables, knowing the menu and hours, passing every reservation to your team. Live in one day.",
+    "ogTitle": "Gostio — AI-администратор для ресторанов",
+    "ogDescription": "Отвечает на каждый звонок. Бронирует каждый стол.",
+    "ogImageAlt": "Логотип Gostio и таглайн «Ни одного пропущенного гостя»",
+    "footer": "© 2026 Gostio. Демо-версия сайта, контакты — заглушки.",
+    "repoName": "gostio-site"
+  },
+  "toneOfVoice": {
+    "characterRu": "Говорим как опытный метрдотель: спокойно, коротко, по делу, по-человечески тепло. Не продаём «революцию ИИ» — говорим про столы, звонки и выручку.",
+    "characterEn": "We speak like an experienced maître d': calm, short, concrete, warm. No AI-revolution hype — we talk tables, calls and revenue.",
+    "use": ["гости", "зал", "бронь", "стол", "смена", "администратор", "хостес", "Мила", "подключение", "выручка"],
+    "avoid": ["бот", "робот", "чат-бот", "ИИ нового поколения", "умное решение", "клиенты (вместо гостей)", "КАПС", "!!!"]
+  }
+}

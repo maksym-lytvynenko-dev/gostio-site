@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gostio — AI-администратор для ресторанов | Ни одного пропущенного гостя</title>
+<meta name="description" content="Gostio отвечает на звонки и сообщения ресторана 24/7: бронирует столы, знает меню и часы, передаёт брони вашей команде. Подключение за день.">
+
+<link rel="icon" href="/gostio-site/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/gostio-site/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/gostio-site/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#141110">
+
+<link rel="canonical" href="https://maksym-lytvynenko-dev.github.io/gostio-site/">
+<meta property="og:site_name" content="Gostio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maksym-lytvynenko-dev.github.io/gostio-site/">
+<meta property="og:title" content="Gostio — AI-администратор для ресторанов">
+<meta property="og:description" content="Отвечает на каждый звонок. Бронирует каждый стол.">
+<meta property="og:image" content="https://maksym-lytvynenko-dev.github.io/gostio-site/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Логотип Gostio и таглайн «Ни одного пропущенного гостя»">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gostio — AI-администратор для ресторанов">
+<meta name="twitter:description" content="Отвечает на каждый звонок. Бронирует каждый стол.">
+<meta name="twitter:image" content="https://maksym-lytvynenko-dev.github.io/gostio-site/brand/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/gostio-site/design/tokens.css">
+<link rel="stylesheet" href="/gostio-site/design/components.css">
+<link rel="stylesheet" href="/gostio-site/css/site.css">
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body data-page="index">
+
+<p class="demo-ribbon">Демо-версия сайта: бренд и контакты — заглушки, заявки никуда не уходят.</p>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-row">
+    <a class="g-logo" href="/gostio-site/" aria-label="Gostio">
+      <img src="/gostio-site/brand/gostio-mark.svg" alt=""><span>Gostio</span>
+    </a>
+    <nav class="site-nav" id="siteNav" aria-label="Основная навигация">
+      <a href="#how">Как это работает</a>
+      <a href="#channels">Каналы</a>
+      <a href="#audience">Кому подходит</a>
+      <a href="#tech">Интеграции</a>
+      <a href="#security">Безопасность</a>
+      <div class="nav-tail">
+        <div class="lang-switch" role="group" aria-label="Язык">
+          <a class="is-active" href="#" aria-current="true">RU</a><a href="#" data-soon="1">EN</a>
+        </div>
+        <a class="btn btn-primary btn-sm" href="#demo">Смотреть демо</a>
+      </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">AI-администратор для ресторанов</p>
+      <h1>Отвечает на каждый звонок.<br>Бронирует каждый стол.</h1>
+      <p class="lead">Gostio — AI-администратор зала. Мила отвечает на звонки, Instagram, WhatsApp и сообщения с сайта, сам смотрит свободные столы по карте зала и подтверждает бронь за полминуты. Круглосуточно, на языке гостя, без наёма ещё одного хостеса.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="#demo">Смотреть демо</a>
+        <a class="btn btn-secondary btn-lg" href="#how">Как это работает</a>
+      </div>
+      <p class="caption muted">Запуск за 5 рабочих дней. Первый месяц — без оплаты.</p>
+    </div>
+    <div class="hero-visual">
+      <img src="/gostio-site/design/hero-home.svg" alt="Входящий звонок и переписка в WhatsApp слева, карта зала с подсвеченным столом и карточкой брони справа" width="1200" height="740">
+    </div>
+  </div>
+  <div class="container trustbar">
+    <p>Работает с iiko, r_keeper, Lightspeed, Square, Google, WhatsApp Business и Instagram</p>
+  </div>
+</section>
+
+<section id="problem" class="section">
+  <div class="container">
+    <div class="stats reveal">
+      <div class="card">
+        <div class="stat-value">~40%</div>
+        <p class="stat-label">звонков в ресторан остаются без ответа</p>
+        <p class="stat-note">по отраслевым отчётам о телефонии в ресторанах, 2026</p>
+      </div>
+      <div class="card">
+        <div class="stat-value">85%</div>
+        <p class="stat-label">тех, кто не дозвонился, не перезванивают</p>
+        <p class="stat-note">там же</p>
+      </div>
+      <div class="card">
+        <div class="stat-value">10–20%</div>
+        <p class="stat-label">броней превращаются в no-show</p>
+        <p class="stat-note">оценки европейских и североамериканских платформ броней</p>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:var(--s-6)">Каждый неотвеченный звонок — это стол, который сегодня останется пустым. <a class="inline-link" href="#problem">Подробно о проблеме и рынке →</a></p>
+  </div>
+</section>
+
+<section id="channels" class="section section-deep">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Один поток вместо шести окон</p>
+      <h2>Гость пишет туда, куда ему удобно. Вы видите одну книгу броней.</h2>
+      <p class="lead muted">Сегодня брони приходят по шести каналам сразу: звонок, Instagram Direct, WhatsApp, Google, форма на сайте и живой гость у стойки. Каждый канал — свой экран, своя очередь, свои забытые сообщения. Gostio собирает все каналы в один поток: отвечает мгновенно, проверяет реальную посадку и пишет бронь в одно место — вашу книгу и ваш POS.</p>
+    </div>
+    <div class="channels reveal">
+      <div class="channel"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Звонок">
+  <path d="M6.2 3.5h2.4l1.5 3.7-1.9 1.4a11.5 11.5 0 0 0 5.2 5.2l1.4-1.9 3.7 1.5v2.4a2.2 2.2 0 0 1-2.4 2.2C10.3 17.3 6.7 13.7 4 7.1a2.2 2.2 0 0 1 2.2-3.6Z"/>
+  <path d="M14.5 4.2a5.6 5.6 0 0 1 4.3 4.3M14 7.6a2.4 2.4 0 0 1 1.9 1.9"/>
+</svg></span><div><h3>Телефон</h3><p>Живой голос, отвечает с первого гудка, в том числе когда все линии заняты.</p></div></div>
+      <div class="channel"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Instagram">
+  <rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"/>
+  <circle cx="12" cy="12" r="4.1"/>
+  <circle cx="17.1" cy="6.9" r="1.05" fill="currentColor" stroke="none"/>
+</svg></span><div><h3>Instagram Direct</h3><p>Отвечает в директе и по комментариям-запросам о брони.</p></div></div>
+      <div class="channel"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="WhatsApp">
+  <path d="M12 3.4a8.6 8.6 0 0 1 0 17.2 8.5 8.5 0 0 1-4.1-1L3.6 20.4l1.2-4a8.6 8.6 0 0 1 7.2-13Z"/>
+  <path d="M9.3 8.6h1.2l.8 2-1 .8a5.6 5.6 0 0 0 2.5 2.5l.8-1 2 .8v1.2a1.1 1.1 0 0 1-1.2 1.1 7.7 7.7 0 0 1-6.2-6.2 1.1 1.1 0 0 1 1.1-1.2Z"/>
+</svg></span><div><h3>WhatsApp</h3><p>Официальный Business API, подтверждения и напоминания там же.</p></div></div>
+      <div class="channel"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Google">
+  <path d="M20.3 12.2a8.4 8.4 0 1 1-2.5-6"/>
+  <path d="M12.4 12.2h7.9"/>
+  <path d="M12.4 12.2v4.4"/>
+</svg></span><div><h3>Google</h3><p>Бронь прямо из карточки заведения в поиске и на картах.</p></div></div>
+      <div class="channel"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Сайт">
+  <circle cx="12" cy="12" r="8.6"/>
+  <path d="M3.4 12h17.2"/>
+  <path d="M12 3.4a13 13 0 0 1 0 17.2 13 13 0 0 1 0-17.2Z"/>
+</svg></span><div><h3>Сайт</h3><p>Виджет брони, который не уводит гостя на сторонний маркетплейс.</p></div></div>
+      <div class="channel"><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="POS-система">
+  <rect x="4.2" y="7.8" width="15.6" height="12.4" rx="2.6"/>
+  <path d="M7.4 7.8V5.6a2 2 0 0 1 2-2h5.2a2 2 0 0 1 2 2v2.2"/>
+  <path d="M8.2 12.4h7.6M8.2 16h4.4"/>
+</svg></span><div><h3>POS и стойка</h3><p>Хостес видит те же столы и ту же книгу, без двойного ввода.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-head"><h2>Что меняется в ресторане с первой недели</h2></div>
+    <div class="features reveal">
+      <article class="card card-hover"><span class="num">1</span><h3>Все звонки приняты</h3><p>ИИ берёт трубку на первом гудке, в час пик и в 23:40, когда зал занят. Не «оставьте сообщение», а сразу подтверждённая бронь.</p></article>
+      <article class="card card-hover"><span class="num">2</span><h3>Брони без ошибок посадки</h3><p>Свободный стол проверяется по живой карте зала с учётом времени оборота, объединения столов и депозитных зон. Овербукинга не будет.</p></article>
+      <article class="card card-hover"><span class="num">3</span><h3>Меньше no-show</h3><p>Автоматическое подтверждение, напоминание накануне и за два часа, лёгкая отмена одним нажатием и, где нужно, депозит или карта-гарантия.</p></article>
+      <article class="card card-hover"><span class="num">4</span><h3>Ответы про меню и аллергены</h3><p>ИИ знает вашу карту, стоп-лист и состав блюд и честно отвечает на вопрос «есть ли у вас безглютеновая паста».</p></article>
+      <article class="card card-hover"><span class="num">5</span><h3>Доставка и самовывоз в том же диалоге</h3><p>Гость не переходит в агрегатор — заказ остаётся вашим, вместе с маржой и контактом.</p></article>
+      <article class="card card-hover"><span class="num">6</span><h3>Данные о гостях остаются вашими</h3><p>История визитов, предпочтения, аллергии, любимый стол — в вашей базе, а не в чужом маркетплейсе.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section section-deep">
+  <div class="container">
+    <div class="section-head"><h2>От «алло» до посадки — четыре шага</h2></div>
+    <figure class="figure reveal">
+      <img src="/gostio-site/design/diagram-booking-flow.svg" alt="Схема пути брони: каналы, семь шагов обработки и три ветки «что если…»" width="1240" height="620">
+      <figcaption>Путь брони: от обращения в любом канале до посадки в зале</figcaption>
+    </figure>
+    <div class="steps reveal">
+      <div class="step"><h3>Обращение</h3><p>Гость звонит или пишет — в любом канале, на любом языке.</p></div>
+      <div class="step"><h3>Проверка</h3><p>Gostio смотрит карту зала, время оборота и правила смены и предлагает реальные варианты: «19:00 у окна или 20:30 на террасе».</p></div>
+      <div class="step"><h3>Подтверждение</h3><p>Бронь падает в книгу и в POS, гость получает подтверждение в том же канале, а перед визитом — напоминание.</p></div>
+      <div class="step"><h3>Зал</h3><p>Хостес видит гостя, его заметки и историю. Если что-то пошло не так — лист ожидания предложит стол первым в очереди.</p></div>
+    </div>
+    <p style="margin-top:var(--s-6)"><a class="inline-link" href="#how">Разобрать каждый шаг подробно →</a></p>
+  </div>
+</section>
+
+<section id="dashboard" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Один экран для смены и один — для владельца</h2>
+      <p class="lead muted">Смена работает с картой зала: перетащил бронь, объединил столы, отметил посадку. Владелец смотрит другое — сколько броней пришло из каждого канала, сколько звонков ИИ закрыл сам, какой процент no-show, средний чек по источнику и что спрашивают гости, когда ресторан закрыт.</p>
+    </div>
+    <div class="shots reveal">
+      <figure class="figure" style="margin:0">
+        <img src="/gostio-site/design/mockup-dashboard.svg" alt="Панель управляющего: метрики, посадки, диалоги, каналы и сводка владельцу" width="1200" height="780">
+        <figcaption>Панель управляющего</figcaption>
+      </figure>
+      <figure class="figure" style="margin:0">
+        <img src="/gostio-site/design/mockup-floorplan.svg" alt="Карта зала: зоны, объединение столов, блокировка, карточка брони и лист ожидания" width="1200" height="760">
+        <figcaption>Карта зала в смене</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="audience" class="section section-deep">
+  <div class="container">
+    <div class="section-head"><h2>Для кого</h2></div>
+    <div class="audience reveal">
+      <article class="card card-hover"><h3>Одиночный ресторан</h3><p class="muted">Снимает телефон и директ с хостеса, освобождает зал для гостей, которые уже пришли.</p><a class="inline-link" href="#audience">Ресторанам →</a></article>
+      <article class="card card-hover"><h3>Сеть и франшиза</h3><p class="muted">Единые правила броней, общая аналитика по точкам, интеграция с существующим POS.</p><a class="inline-link" href="#tech">Технологии →</a></article>
+      <article class="card card-hover"><h3>Инвесторам</h3><p class="muted">Рынок, монетизация, экономика и план роста.</p><a class="inline-link" href="#audience">Инвесторам →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="tech" class="section">
+  <div class="container">
+    <div class="section-head"><h2>Пять рабочих дней, без ремонта процессов</h2></div>
+    <div class="steps reveal">
+      <div class="step"><h3>День 1</h3><p>Подключаем номер, Instagram, WhatsApp и Google — параллельно с текущей работой, ничего не отключая.</p></div>
+      <div class="step"><h3>День 2–3</h3><p>Загружаем карту зала, меню, аллергены, правила смены и депозитов.</p></div>
+      <div class="step"><h3>День 4</h3><p>Обучаем ИИ на ваших сценариях и тестируем его вместе с хостесом.</p></div>
+      <div class="step"><h3>День 5</h3><p>Переводим поток на Gostio, оставляя переключение на живого человека в один клик.</p></div>
+    </div>
+    <p class="muted" style="margin-top:var(--s-6)">Ничего не переписываем в вашем POS — работаем через официальные интеграции. <a class="inline-link" href="#tech">Как проходит внедрение →</a></p>
+  </div>
+</section>
+
+<section id="security" class="section section-deep">
+  <div class="container">
+    <div class="section-head">
+      <h2>Европейские данные, европейские правила</h2>
+      <p class="lead muted">Данные гостей хранятся в ЕС, записи звонков — с уведомлением и ограниченным сроком хранения, доступ сотрудников — по ролям. Ресторан остаётся контролёром данных, Gostio — обработчиком, с подписанным DPA.</p>
+      <p><a class="inline-link" href="#security">Безопасность и GDPR →</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-head"><h2>Частые вопросы</h2></div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><h3>Гость поймёт, что говорит с ИИ?</h3><p>Мы говорим об этом честно в начале разговора, а по первой же просьбе переводим на человека.</p></div>
+      <div class="faq-item"><h3>А если ИИ не знает ответа?</h3><p>Он не выдумывает: уточняет, предлагает перезвонить менеджеру или переводит звонок в зал.</p></div>
+      <div class="faq-item"><h3>Что с нашим текущим номером?</h3><p>Он остаётся вашим. Мы принимаем звонки на него и не меняем ничего в ваших вывесках и карточках.</p></div>
+    </div>
+    <p style="margin-top:var(--s-6)"><a class="inline-link" href="#faq">Все вопросы →</a></p>
+  </div>
+</section>
+
+<section id="cta" class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Посмотрите, как это звучит на вашем зале</h2>
+      <p class="lead muted">Покажем демо на карте вашего ресторана и дадим позвонить ИИ-хостесу самому — живым голосом, с вашим меню. 20 минут, без обязательств.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-lg" href="#demo">Запросить демо</a>
+        <a class="btn btn-secondary btn-lg" href="https://wa.me/359888000000">Написать в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo" class="section section-deep">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Демо</p>
+      <h2>Послушайте, как Мила отвечает на звонок</h2>
+      <p class="lead muted">Оставьте номер — покажем демо на карте вашего зала и дадим позвонить Мила самому: живым голосом, с вашим меню. 20 минут, без обязательств.</p>
+    </div>
+    <div class="demo-grid reveal">
+      <form class="card demo-form" novalidate>
+        <p class="badge badge-warn"><span class="dot"></span>Демо-форма</p>
+        <label class="field"><span>Ресторан</span>
+          <input class="input" name="place" type="text" placeholder="Например, Sai, Варна" autocomplete="organization"></label>
+        <label class="field"><span>Ваше имя</span>
+          <input class="input" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name"></label>
+        <label class="field"><span>Телефон или WhatsApp</span>
+          <input class="input" name="phone" type="tel" placeholder="+359 888 000 000" autocomplete="tel"></label>
+        <label class="field"><span>Email</span>
+          <input class="input" name="email" type="email" placeholder="hello@gostio.ai" autocomplete="email"></label>
+        <label class="field"><span>Что хотите проверить</span>
+          <textarea class="textarea" name="note" rows="3" placeholder="Звонки в пятницу вечером, брони из Instagram, доставка…"></textarea></label>
+        <button class="btn btn-primary btn-block btn-lg" type="button" data-demo-submit>Запросить демо</button>
+        <p class="caption form-note">Оставьте телефон — перезвоним в рабочие часы. Это демо-форма, заявки пока никуда не уходят.</p>
+        <p class="caption form-result" role="status" hidden></p>
+      </form>
+      <div class="demo-side">
+        <article class="card">
+          <h3>Позвонить прямо сейчас</h3>
+          <p class="muted">Наберите номер — Мила снимет трубку и забронирует стол.</p>
+          <p class="demo-phone"><a href="tel:+359888000000">+359 888 000 000</a></p>
+          <p class="caption">Номер-заглушка: он не звонит. Настоящий появится вместе с подключением.</p>
+        </article>
+        <article class="card">
+          <h3>Написать в мессенджер</h3>
+          <div class="demo-links">
+            <a class="btn btn-secondary btn-sm" href="https://wa.me/359888000000">WhatsApp</a>
+            <a class="btn btn-secondary btn-sm" href="https://t.me/gostio_demo">Telegram</a>
+            <a class="btn btn-secondary btn-sm" href="mailto:sales@gostio.ai">sales@gostio.ai</a>
+          </div>
+          <p class="caption">Ссылки-заглушки для демонстрации вёрстки.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Контакты</p>
+      <h2>Gostio — Ни одного пропущенного гостя.</h2>
+      <p class="lead muted">Все данные ниже — заглушки для демо-версии сайта. Заменим их на настоящие вместе с запуском.</p>
+    </div>
+    <div class="grid grid-3 contacts-grid reveal">
+      <article class="card">
+        <h3>Телефон</h3>
+        <p><a href="tel:+359888000000">+359 888 000 000</a></p>
+        <p><a href="tel:+35952000000">+359 52 000 000</a></p>
+        <p class="caption">Пн–Пт 10:00–19:00 (EET). Мила отвечает 24/7</p>
+      </article>
+      <article class="card">
+        <h3>Переписка</h3>
+        <p><a href="https://wa.me/359888000000">WhatsApp +359 888 000 000</a></p>
+        <p><a href="https://t.me/gostio_demo">Telegram @gostio_demo</a></p>
+        <p><a href="https://instagram.com/gostio.ai">Instagram</a></p>
+      </article>
+      <article class="card">
+        <h3>Почта</h3>
+        <p><a href="mailto:hello@gostio.ai">hello@gostio.ai</a> — общие вопросы</p>
+        <p><a href="mailto:sales@gostio.ai">sales@gostio.ai</a> — подключение</p>
+        <p><a href="mailto:support@gostio.ai">support@gostio.ai</a> — поддержка</p>
+      </article>
+      <article class="card">
+        <h3>Офис</h3>
+        <p class="muted">9000 Варна, България, бул. «Княз Борис I» 000, офис 0</p>
+        <p class="caption">EET (UTC+2/+3)</p>
+      </article>
+      <article class="card">
+        <h3>Юрлицо</h3>
+        <p class="muted">Gostio EOOD</p>
+        <p class="caption">Регистрационные данные добавим после регистрации компании.</p>
+      </article>
+      <article class="card">
+        <h3>Соцсети</h3>
+        <div class="demo-links">
+          <a class="btn btn-secondary btn-sm" href="https://instagram.com/gostio.ai">Instagram</a>
+          <a class="btn btn-secondary btn-sm" href="https://facebook.com/gostio.ai">Facebook</a>
+          <a class="btn btn-secondary btn-sm" href="https://linkedin.com/company/gostio">LinkedIn</a>
+          <a class="btn btn-secondary btn-sm" href="https://youtube.com/@gostio">YouTube</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="g-logo" href="/gostio-site/" aria-label="Gostio" style="font-size:20px">
+        <img src="/gostio-site/brand/gostio-mark.svg" alt=""><span>Gostio</span>
+      </a>
+      <p class="muted footer-note">Gostio — AI-администратор, который принимает звонки и сообщения ресторана 24/7: отвечает гостям, бронирует столы и передаёт брони вашей команде.</p>
+      <p class="caption">© 2026 Gostio. Демо-версия сайта, контакты — заглушки.</p>
+    </div>
+    <div>
+      <h4>Продукт</h4>
+      <a href="#how">Как это работает</a>
+      <a href="#channels">Каналы</a>
+      <a href="#tech">Интеграции</a>
+      <a href="#faq">Вопросы и ответы</a>
+    </div>
+    <div>
+      <h4>Компания</h4>
+      <a href="#problem">Проблема</a>
+      <a href="#audience">Кому подходит</a>
+      <a href="#security">Безопасность и GDPR</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+    <div>
+      <h4>Связаться</h4>
+      <a href="tel:+359888000000">+359 888 000 000</a>
+      <a href="https://wa.me/359888000000">WhatsApp</a>
+      <a href="mailto:hello@gostio.ai">hello@gostio.ai</a>
+      <a href="https://t.me/gostio_demo">Telegram @gostio_demo</a>
+      <a class="btn btn-secondary btn-sm footer-cta" href="#demo">Запросить демо</a>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <span class="soon">Политика конфиденциальности — скоро</span><span class="soon">Условия использования — скоро</span>
+  </div>
+</footer>
+
+<a class="sticky-cta" href="#demo">Смотреть демо</a>
+<script src="/gostio-site/js/site.js" defer></script>
+</body>
+</html>

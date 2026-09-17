@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Gostio — дизайн-токены
+   Подключать первым, до остальных стилей сайта.
+   Шрифты (добавить в <head>):
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
+   ========================================================================== */
+
+:root {
+  /* --- Палитра: база ---------------------------------------------------- */
+  --g-ink:        #1A1715;  /* основной текст, знак на светлом            */
+  --g-muted:      #5F544E;  /* вторичный текст, 6.5:1 на cream            */
+  --g-copper:     #C2643C;  /* акцент-графика, крупный текст от 24px      */
+  --g-copper-600: #A84F2A;  /* кнопки, ссылки — безопасен для мелкого     */
+  --g-copper-300: #E08A5C;  /* акцент на тёмном фоне                      */
+  --g-sand:       #F3EADF;  /* фон секций                                 */
+  --g-cream:      #FAF6F0;  /* фон страницы (светлая тема)                */
+  --g-paper:      #F4ECE3;  /* текст/знак на тёмном                       */
+  --g-night:      #141110;  /* фон страницы (тёмная тема)                 */
+  --g-line:       #E6DACA;  /* границы, разделители                       */
+  --g-sage:       #4E7A5E;  /* статус «успех», бронь подтверждена         */
+
+  /* --- Семантика: светлая тема (по умолчанию) --------------------------- */
+  --g-bg:            var(--g-cream);
+  --g-bg-alt:        var(--g-sand);
+  --g-surface:       #FFFFFF;
+  --g-text:          var(--g-ink);
+  --g-text-muted:    var(--g-muted);
+  --g-accent:        var(--g-copper);
+  --g-accent-strong: var(--g-copper-600);  /* ссылки и мелкий акцентный текст */
+  --g-on-accent:     #FFFFFF;
+  --g-border:        var(--g-line);
+
+  /* --- Типографика ------------------------------------------------------ */
+  --g-font-display: 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --g-font-text:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --g-fs-hero:  clamp(2.25rem, 1.25rem + 3.6vw, 4rem);     /* 36 → 64 */
+  --g-fs-h2:    clamp(1.625rem, 1.1rem + 1.9vw, 2.5rem);   /* 26 → 40 */
+  --g-fs-h3:    clamp(1.25rem, 1.05rem + 0.7vw, 1.5rem);   /* 20 → 24 */
+  --g-fs-lead:  clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);  /* 17 → 20 */
+  --g-fs-body:  1rem;
+  --g-fs-small: 0.875rem;
+  --g-fs-micro: 0.75rem;
+
+  --g-lh-tight: 1.06;   /* hero                  */
+  --g-lh-head:  1.18;   /* h2/h3                 */
+  --g-lh-body:  1.6;    /* абзацы                */
+  --g-ls-tight: -0.028em;  /* hero, крупные заголовки */
+  --g-ls-wm:    -0.025em;  /* начертание логотипа     */
+
+  /* --- Скругления и тени ------------------------------------------------ */
+  --g-r-xs: 6px;
+  --g-r-sm: 10px;
+  --g-r-md: 14px;
+  --g-r-lg: 22px;
+  --g-r-xl: 32px;
+  --g-r-pill: 999px;
+
+  --g-shadow-sm: 0 1px 2px rgba(26,23,21,.06), 0 2px 6px rgba(26,23,21,.05);
+  --g-shadow-md: 0 4px 10px rgba(26,23,21,.07), 0 14px 32px rgba(26,23,21,.08);
+  --g-shadow-accent: 0 8px 22px rgba(168,79,42,.25);
+
+  /* --- Отступы (шаг 4px) ------------------------------------------------ */
+  --g-s-1: 4px;  --g-s-2: 8px;   --g-s-3: 12px;  --g-s-4: 16px;
+  --g-s-5: 24px; --g-s-6: 32px;  --g-s-7: 48px;  --g-s-8: 64px;
+  --g-s-9: 96px; --g-s-10: 128px;
+
+  --g-container: 1160px;
+  --g-section-y: clamp(3.5rem, 2rem + 6vw, 7rem);
+
+  --g-ease: cubic-bezier(.4, 0, .2, 1);
+  --g-dur:  .2s;
+}
+
+/* --- Тёмная тема: автоматически ----------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --g-bg:            var(--g-night);
+    --g-bg-alt:        #1C1817;
+    --g-surface:       #211C1A;
+    --g-text:          var(--g-paper);
+    --g-text-muted:    #B6A79B;
+    --g-accent:        var(--g-copper-300);
+    --g-accent-strong: var(--g-copper-300);
+    --g-on-accent:     #1A1715;
+    --g-border:        #332A25;
+    --g-shadow-sm: 0 1px 2px rgba(0,0,0,.4);
+    --g-shadow-md: 0 10px 30px rgba(0,0,0,.5);
+  }
+}
+
+/* --- Ручное переключение темы: <html data-theme="dark|light"> ----------- */
+[data-theme="dark"] {
+  --g-bg: var(--g-night);        --g-bg-alt: #1C1817;   --g-surface: #211C1A;
+  --g-text: var(--g-paper);      --g-text-muted: #B6A79B;
+  --g-accent: var(--g-copper-300); --g-accent-strong: var(--g-copper-300);
+  --g-on-accent: #1A1715;        --g-border: #332A25;
+}
+[data-theme="light"] {
+  --g-bg: var(--g-cream);        --g-bg-alt: var(--g-sand); --g-surface: #FFFFFF;
+  --g-text: var(--g-ink);        --g-text-muted: var(--g-muted);
+  --g-accent: var(--g-copper);   --g-accent-strong: var(--g-copper-600);
+  --g-on-accent: #FFFFFF;        --g-border: var(--g-line);
+}
+
+/* --- Готовый локап логотипа --------------------------------------------
+   <a class="g-logo" href="/" aria-label="Gostio">
+     <img src="/brand/gostio-mark.svg" alt=""><span>Gostio</span>
+   </a>
+   Размер логотипа задаётся ОДНИМ свойством font-size на .g-logo.
+   ----------------------------------------------------------------------- */
+.g-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .30em;
+  line-height: 1;
+  white-space: nowrap;
+  font-size: 22px;            /* шапка сайта; в футере 20px, в hero до 56px */
+  text-decoration: none;
+  color: var(--g-text);
+}
+.g-logo img { display: block; height: .95em; width: .95em; }
+.g-logo span {
+  font-family: var(--g-font-display);
+  font-weight: 800;
+  font-size: 1em;
+  letter-spacing: var(--g-ls-wm);
+  transform: translateY(.012em);  /* оптическая компенсация к центру знака */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --g-dur: .001s; }
+}

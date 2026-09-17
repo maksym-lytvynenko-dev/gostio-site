@@ -1,0 +1,61 @@
+{
+  "lang": "ru",
+  "brand": "Gostio",
+  "site_url": "https://maksym-lytvynenko-dev.github.io/gostio-site",
+  "base": "/gostio-site",
+  "nav": [
+    [
+      "#how",
+      "Как это работает"
+    ],
+    [
+      "#channels",
+      "Каналы"
+    ],
+    [
+      "#audience",
+      "Кому подходит"
+    ],
+    [
+      "#tech",
+      "Интеграции"
+    ],
+    [
+      "#security",
+      "Безопасность"
+    ]
+  ],
+  "vars": {
+    "BRAND": "Gostio",
+    "BRAND_FULL": "Gostio — AI-администратор для ресторанов",
+    "PERSONA": "Мила",
+    "TAGLINE": "Ни одного пропущенного гостя.",
+    "TAGLINE_LONG": "Gostio — AI-администратор, который принимает звонки и сообщения ресторана 24/7: отвечает гостям, бронирует столы и передаёт брони вашей команде.",
+    "HERO_SUB": "Работает 24/7 — даже когда зал забит",
+    "OG_TITLE": "Gostio — AI-администратор для ресторанов",
+    "OG_DESCRIPTION": "Отвечает на каждый звонок. Бронирует каждый стол.",
+    "OG_IMAGE_ALT": "Логотип Gostio и таглайн «Ни одного пропущенного гостя»",
+    "FOOTER_LEGAL": "© 2026 Gostio. Демо-версия сайта, контакты — заглушки.",
+    "PHONE": "+359 888 000 000",
+    "PHONE_RAW": "+359888000000",
+    "PHONE2": "+359 52 000 000",
+    "PHONE2_RAW": "+35952000000",
+    "WHATSAPP": "https://wa.me/359888000000",
+    "WHATSAPP_DISPLAY": "+359 888 000 000",
+    "TELEGRAM": "https://t.me/gostio_demo",
+    "TELEGRAM_HANDLE": "@gostio_demo",
+    "EMAIL": "hello@gostio.ai",
+    "EMAIL_SALES": "sales@gostio.ai",
+    "EMAIL_SUPPORT": "support@gostio.ai",
+    "ADDRESS": "9000 Варна, България, бул. «Княз Борис I» 000, офис 0",
+    "HOURS": "Пн–Пт 10:00–19:00 (EET). Мила отвечает 24/7",
+    "INSTAGRAM": "https://instagram.com/gostio.ai",
+    "FACEBOOK": "https://facebook.com/gostio.ai",
+    "LINKEDIN": "https://linkedin.com/company/gostio",
+    "YOUTUBE": "https://youtube.com/@gostio",
+    "DEMO_CTA": "Послушать, как отвечает Мила",
+    "FORM_NOTE": "Оставьте телефон — перезвоним в рабочие часы. Это демо-форма, заявки пока никуда не уходят.",
+    "LEGAL_NAME": "Gostio EOOD",
+    "TIMEZONE": "EET (UTC+2/+3)"
+  }
+}

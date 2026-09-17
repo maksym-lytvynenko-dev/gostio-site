@@ -1,0 +1,13 @@
+<!--
+  Gostio — favicon. Знак на тёмной «плашке»: одинаково читается
+  и в светлой, и в тёмной вкладке браузера, поэтому media-запрос не нужен.
+  Проверено на 64 / 32 / 16 px.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Gostio">
+  <title>Gostio</title>
+  <rect width="64" height="64" rx="16" fill="#1A1715"/>
+  <g fill="none" stroke-linecap="round" stroke-width="8.5" transform="translate(32 32) scale(0.9) translate(-32 -32)">
+    <path d="M47.56 16.44A22 22 0 1 0 54 32" stroke="#FAF6F0"/>
+    <path d="M54 32H41.5" stroke="#E08A5C"/>
+  </g>
+</svg>

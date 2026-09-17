@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- Тестовый лист логотипа. Открывать из папки brand/src — SVG берутся на уровень выше. -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Gostio — logo test sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1715; --cream:#FAF6F0; --copper:#C2643C; --copper-dk:#A84F2A;
+    --night:#141110; --paper:#F4ECE3; --copper-lt:#E08A5C; --line:#E6DACA;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;padding:40px 48px}
+  h2{font-family:Manrope;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#8A7C74;margin:34px 0 14px}
+  .row{display:flex;align-items:flex-end;gap:36px;flex-wrap:wrap}
+  .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:18px}
+  .box.dark{background:var(--night);border-color:#2B231E}
+  .cap{font-size:11px;color:#8A7C74;margin-top:6px}
+  /* Размер локапа задаётся font-size на контейнере .lock,
+     знак меряется в em ЭТОГО контейнера — иначе он схлопнется до 16px. */
+  .lock{display:inline-flex;align-items:center;gap:.30em;line-height:1;white-space:nowrap}
+  .lock img{display:block;height:.95em;width:.95em}
+  .lock span{font-family:Manrope,sans-serif;font-weight:800;font-size:1em;letter-spacing:-.025em;transform:translateY(.012em)}
+  .sw{display:flex;gap:10px;flex-wrap:wrap}
+  .sw div{width:104px;height:64px;border-radius:10px;border:1px solid rgba(0,0,0,.08);display:flex;align-items:flex-end;padding:6px;font-size:10px;font-family:Inter}
+</style>
+</head>
+<body>
+
+<h2>Знак · mark</h2>
+<div class="row">
+  <div><div class="box"><img src="../gostio-mark.svg" width="96" height="96" alt=""></div><div class="cap">96 px</div></div>
+  <div><div class="box"><img src="../gostio-mark.svg" width="48" height="48" alt=""></div><div class="cap">48 px</div></div>
+  <div><div class="box"><img src="../gostio-mark.svg" width="24" height="24" alt=""></div><div class="cap">24 px</div></div>
+  <div><div class="box dark"><img src="../gostio-mark-dark.svg" width="96" height="96" alt=""></div><div class="cap">dark 96 px</div></div>
+  <div><div class="box"><img src="../favicon.svg" width="64" height="64" alt=""><img src="../favicon.svg" width="32" height="32" alt=""><img src="../favicon.svg" width="16" height="16" alt=""></div><div class="cap">favicon 64 / 32 / 16</div></div>
+</div>
+
+<h2>Логотип · lockup</h2>
+<div class="row">
+  <div><div class="box"><span class="lock" style="font-size:56px"><img src="../gostio-mark.svg" alt=""><span>Gostio</span></span></div><div class="cap">light · 56 px</div></div>
+  <div><div class="box dark"><span class="lock" style="font-size:56px;color:var(--paper)"><img src="../gostio-mark-dark.svg" alt=""><span>Gostio</span></span></div><div class="cap">dark · 56 px</div></div>
+  <div><div class="box"><span class="lock" style="font-size:22px"><img src="../gostio-mark.svg" alt=""><span>Gostio</span></span></div><div class="cap">nav · 22 px</div></div>
+</div>
+
+<h2>Палитра · palette</h2>
+<div class="sw">
+  <div style="background:#1A1715;color:#FAF6F0">ink #1A1715</div>
+  <div style="background:#5F544E;color:#fff">muted #5F544E</div>
+  <div style="background:#C2643C;color:#fff">copper #C2643C</div>
+  <div style="background:#A84F2A;color:#fff">copper-600 #A84F2A</div>
+  <div style="background:#E08A5C">copper-300 #E08A5C</div>
+  <div style="background:#F3EADF">sand #F3EADF</div>
+  <div style="background:#FAF6F0">cream #FAF6F0</div>
+  <div style="background:#141110;color:#F4ECE3">night #141110</div>
+  <div style="background:#4E7A5E;color:#fff">sage #4E7A5E</div>
+</div>
+
+<h2>Шрифты · type</h2>
+<div style="max-width:720px">
+  <div style="font-family:Manrope;font-weight:800;letter-spacing:-.028em;font-size:40px;line-height:1.1">Ни одного пропущенного гостя.</div>
+  <div style="font-family:Manrope;font-weight:700;font-size:24px;margin-top:14px">Отвечает на каждый звонок. Бронирует каждый стол.</div>
+  <p style="font-size:16px;line-height:1.6;color:#5F544E;max-width:60ch">Inter, 16/1.6. В час пик телефон в ресторане звонит, когда некому взять трубку. Гость не звонит второй раз — он звонит в соседнее место. Every call answered. Every table booked. 0123456789</p>
+</div>
+
+</body>
+</html>

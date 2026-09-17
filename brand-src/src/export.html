@@ -1,0 +1,43 @@
+<!doctype html>
+<!--
+  Исходник PNG-экспортов. Каждый блок снимается по своему id:
+  #exp-logo-light, #exp-logo-dark, #exp-mark-512, #exp-fav-512, #exp-fav-180, #exp-fav-32.
+  Логотипы и знак снимаются с прозрачным фоном.
+  SVG берутся на уровень выше (папка brand/).
+-->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Gostio — exports</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:transparent;font-family:Manrope,sans-serif}
+  .lock{display:inline-flex;align-items:center;gap:.30em;line-height:1;white-space:nowrap}
+  .lock img{display:block;height:.95em;width:.95em}
+  .lock span{font-weight:800;letter-spacing:-.025em;font-size:1em;line-height:1;
+             transform:translateY(.012em)}
+  #exp-logo-light,#exp-logo-dark{font-size:120px;padding:0}
+  #exp-logo-light span{color:#1A1715}
+  #exp-logo-dark span{color:#F4ECE3}
+  .stack{display:block;padding:40px}
+  .icon{display:flex;align-items:center;justify-content:center;background:#1A1715}
+  #exp-mark-512{width:512px;height:512px}
+  #exp-fav-512{width:512px;height:512px;border-radius:112px}
+  #exp-fav-180{width:180px;height:180px}
+  #exp-fav-32{width:32px;height:32px;border-radius:7px}
+</style>
+</head>
+<body>
+
+<div class="stack"><span class="lock" id="exp-logo-light"><img src="../gostio-mark.svg" alt=""><span>Gostio</span></span></div>
+<div class="stack"><span class="lock" id="exp-logo-dark"><img src="../gostio-mark-dark.svg" alt=""><span>Gostio</span></span></div>
+
+<div class="stack"><div id="exp-mark-512" style="display:flex;align-items:center;justify-content:center"><img src="../gostio-mark.svg" width="512" height="512" alt=""></div></div>
+<div class="stack"><div class="icon" id="exp-fav-512"><img src="../gostio-mark-dark.svg" width="384" height="384" alt=""></div></div>
+<div class="stack"><div class="icon" id="exp-fav-180"><img src="../gostio-mark-dark.svg" width="136" height="136" alt=""></div></div>
+<div class="stack"><div class="icon" id="exp-fav-32"><img src="../gostio-mark-dark.svg" width="26" height="26" alt=""></div></div>
+
+</body>
+</html>
